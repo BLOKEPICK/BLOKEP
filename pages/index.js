@@ -28,30 +28,30 @@ export default function Home() {
         <section className="w-full mb-20">
           <h2 className="text-2xl font-bold mb-4">Winning Tickets</h2>
           <div className="flex overflow-x-auto space-x-4 p-4">
-            <img key="0" src="/tickets/IMG_0097.webp" alt="Ticket 1" className="w-64 h-auto rounded-lg shadow" />
-            <img key="1" src="/tickets/IMG_0118.webp" alt="Ticket 2" className="w-64 h-auto rounded-lg shadow" />
-            <img key="2" src="/tickets/IMG_0150.webp" alt="Ticket 3" className="w-64 h-auto rounded-lg shadow" />
-            <img key="3" src="/tickets/IMG_0220.webp" alt="Ticket 4" className="w-64 h-auto rounded-lg shadow" />
-            <img key="4" src="/tickets/IMG_0237.webp" alt="Ticket 5" className="w-64 h-auto rounded-lg shadow" />
-            <img key="5" src="/tickets/IMG_0436.webp" alt="Ticket 6" className="w-64 h-auto rounded-lg shadow" />
-            <img key="6" src="/tickets/IMG_0669.webp" alt="Ticket 7" className="w-64 h-auto rounded-lg shadow" />
-            <img key="7" src="/tickets/IMG_0976.webp" alt="Ticket 8" className="w-64 h-auto rounded-lg shadow" />
-            <img key="8" src="/tickets/IMG_1383.webp" alt="Ticket 9" className="w-64 h-auto rounded-lg shadow" />
-            <img key="9" src="/tickets/IMG_1482.webp" alt="Ticket 10" className="w-64 h-auto rounded-lg shadow" />
-            <img key="10" src="/tickets/IMG_1742.webp" alt="Ticket 11" className="w-64 h-auto rounded-lg shadow" />
-            <img key="11" src="/tickets/IMG_1755.webp" alt="Ticket 12" className="w-64 h-auto rounded-lg shadow" />
-            <img key="12" src="/tickets/IMG_1791.webp" alt="Ticket 13" className="w-64 h-auto rounded-lg shadow" />
-            <img key="13" src="/tickets/IMG_2403.webp" alt="Ticket 14" className="w-64 h-auto rounded-lg shadow" />
-            <img key="14" src="/tickets/IMG_2473.webp" alt="Ticket 15" className="w-64 h-auto rounded-lg shadow" />
-            <img key="15" src="/tickets/IMG_2631.webp" alt="Ticket 16" className="w-64 h-auto rounded-lg shadow" />
-            <img key="16" src="/tickets/IMG_2725.webp" alt="Ticket 17" className="w-64 h-auto rounded-lg shadow" />
-            <img key="17" src="/tickets/IMG_2791.webp" alt="Ticket 18" className="w-64 h-auto rounded-lg shadow" />
-            <img key="18" src="/tickets/IMG_2793.webp" alt="Ticket 19" className="w-64 h-auto rounded-lg shadow" />
-            <img key="19" src="/tickets/IMG_2892.webp" alt="Ticket 20" className="w-64 h-auto rounded-lg shadow" />
-            <img key="20" src="/tickets/IMG_2893.webp" alt="Ticket 21" className="w-64 h-auto rounded-lg shadow" />
-            <img key="21" src="/tickets/IMG_2936.webp" alt="Ticket 22" className="w-64 h-auto rounded-lg shadow" />
-            <img key="22" src="/tickets/IMG_7542.webp" alt="Ticket 23" className="w-64 h-auto rounded-lg shadow" />
-            <img key="23" src="/tickets/IMG_8290.webp" alt="Ticket 24" className="w-64 h-auto rounded-lg shadow" />
+            <img src="/tickets/IMG_0097.webp" alt="Ticket 1" width="524" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0118.webp" alt="Ticket 2" width="518" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0150.webp" alt="Ticket 3" width="615" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0220.webp" alt="Ticket 4" width="522" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0237.webp" alt="Ticket 5" width="503" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0436.webp" alt="Ticket 6" width="615" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0669.webp" alt="Ticket 7" width="800" height="427" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_0976.webp" alt="Ticket 8" width="488" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_1383.webp" alt="Ticket 9" width="757" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_1482.webp" alt="Ticket 10" width="800" height="297" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_1742.webp" alt="Ticket 11" width="800" height="375" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_1755.webp" alt="Ticket 12" width="692" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_1791.webp" alt="Ticket 13" width="576" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2403.webp" alt="Ticket 14" width="800" height="703" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2473.webp" alt="Ticket 15" width="584" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2631.webp" alt="Ticket 16" width="791" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2725.webp" alt="Ticket 17" width="787" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2791.webp" alt="Ticket 18" width="569" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2793.webp" alt="Ticket 19" width="567" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2892.webp" alt="Ticket 20" width="540" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2893.webp" alt="Ticket 21" width="800" height="404" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_2936.webp" alt="Ticket 22" width="790" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_7542.webp" alt="Ticket 23" width="526" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
+            <img src="/tickets/IMG_8290.webp" alt="Ticket 24" width="625" height="800" loading="lazy" className="rounded-lg shadow w-auto h-auto" />
           </div>
         </section>
 
