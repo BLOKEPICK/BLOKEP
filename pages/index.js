@@ -53,6 +53,12 @@ export default function Home() {
   </div>
 </section>
 
+<div className="w-full flex justify-center py-8">
+  <div className="h-px w-24 bg-gray-600 rounded-full opacity-50"></div>
+</div>
+
+
+
 
 <section className="w-full px-4 my-20">
   <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
@@ -177,12 +183,7 @@ export default function Home() {
 
         
 
-        <section className="max-w-xl text-center mb-20">
-          <h2 className="text-2xl font-bold mb-6">FAQs</h2>
-          <p className="mb-4"><strong>Q:</strong> What’s included in VIP access?<br /><strong>A:</strong> Picks, Discord access, betting strategy content.</p>
-          <p className="mb-4"><strong>Q:</strong> Can I cancel anytime?<br /><strong>A:</strong> Yes. No contracts, no stress.</p>
-          <p><strong>Q:</strong> Do I need experience?<br /><strong>A:</strong> Not required. We’ll guide you.</p>
-        </section>
+        
 
         <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
 
