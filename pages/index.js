@@ -16,14 +16,43 @@ export default function Home() {
         <button className="bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-6 rounded-xl shadow-md transition mb-2">🥇 JOIN VIP</button>
         <p className="text-sm text-gray-400 mb-12">Get instant access to our private VIP Discord and start betting like a pro.</p>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-20">
-          <div>🏆 <strong>Daily Premium Picks</strong><br /> Expert-crafted plays with real unit tracking.</div>
-          <div>💬 <strong>VIP Chat Room</strong><br /> Discuss strategies with sharp bettors.</div>
-          <div>📊 <strong>Data-Backed Analysis</strong><br /> Stats and research, not guesswork.</div>
-          <div>📈 <strong>Real Unit Tracking</strong><br /> See performance transparently.</div>
-          <div>🧠 <strong>Smart Betting Strategy</strong><br /> Tools to help you bet with purpose.</div>
-          <div>🔒 <strong>Private Discord Access</strong><br /> Join a serious community of bettors.</div>
-        </section>
+        
+<section className="w-full mb-20">
+  <h2 className="text-2xl font-bold mb-6 text-center">What You Get</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
+      <div className="text-3xl mb-2">🏆</div>
+      <h3 className="text-lg font-bold">Daily Premium Picks</h3>
+      <p className="text-sm text-gray-400">Expert-crafted plays with real unit tracking.</p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
+      <div className="text-3xl mb-2">💬</div>
+      <h3 className="text-lg font-bold">VIP Chat Room</h3>
+      <p className="text-sm text-gray-400">Discuss strategies with sharp bettors in real-time.</p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
+      <div className="text-3xl mb-2">📊</div>
+      <h3 className="text-lg font-bold">Data-Backed Analysis</h3>
+      <p className="text-sm text-gray-400">Stats and research guide every play we post.</p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
+      <div className="text-3xl mb-2">📈</div>
+      <h3 className="text-lg font-bold">Real Unit Tracking</h3>
+      <p className="text-sm text-gray-400">Transparency and accountability in every bet.</p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
+      <div className="text-3xl mb-2">🧠</div>
+      <h3 className="text-lg font-bold">Smart Betting Strategy</h3>
+      <p className="text-sm text-gray-400">Learn how to bet like a professional, not a fan.</p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
+      <div className="text-3xl mb-2">🔒</div>
+      <h3 className="text-lg font-bold">Private Discord Access</h3>
+      <p className="text-sm text-gray-400">A focused space for serious bettors only.</p>
+    </div>
+  </div>
+</section>
+
 
         <section className="w-full mb-20">
   <h2 className="text-2xl font-bold mb-4">Winning Tickets</h2>
@@ -129,7 +158,7 @@ export default function Home() {
             <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
             <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
           </div>
-          © 2025 BLOKE PICK. Todos los derechos reservados.
+          © 2025 BLOKE PICK. All rights reserved.
         </footer>
       </main>
     </>
