@@ -211,23 +211,11 @@ export default function Home() {
 }
 
 
-
-        
-
-
-
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
-          <a href="/api/discord-login" style={{
-            backgroundColor: "#23272A",
-            color: "white",
-            padding: "12px 24px",
-            borderRadius: "8px",
-            display: "flex",
-            alignItems: "center",
-            textDecoration: "none",
-            fontWeight: "bold",
-            transition: "all 0.2s ease-in-out"
-          }}>
-            Connect with Discord
-          </a>
-        </div>
+<div className="flex justify-center mt-8">
+  <a
+    href="/api/discord-login"
+    className="bg-zinc-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-all"
+  >
+    Connect with Discord
+  </a>
+</div>
