@@ -212,7 +212,27 @@ export default function Home() {
 
 
 
-        
+        <div style={ display: 'flex', justifyContent: 'center', marginTop: '2rem' }>
+          <a href="/api/discord-login" style={
+            backgroundColor: '#23272A',
+            color: 'white',
+            padding: '12px 24px',
+            borderRadius: '8px',
+            display: 'flex',
+            alignItems: 'center',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            transition: 'all 0.2s ease-in-out',
+          } onMouseEnter={e => e.target.style.backgroundColor = '#5865F2'}
+             onMouseLeave={e => e.target.style.backgroundColor = '#23272A'}>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="currentColor" style={{ marginRight: '8px' }}>
+<path d="M12 0C5.37 0 0 5.37 0 12c0 4.76 2.74 8.86 6.69 10.75.49.09.67-.21.67-.47 0-.23-.01-.84-.01-1.64-2.72.59-3.3-1.31-3.3-1.31-.45-1.14-1.1-1.44-1.1-1.44-.9-.61.07-.6.07-.6 1 .07 1.53 1.04 1.53 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.17-.25-4.45-1.08-4.45-4.79 0-1.06.39-1.92 1.03-2.59-.1-.26-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02a9.55 9.55 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.39.2 2.42.1 2.68.64.67 1.03 1.53 1.03 2.59 0 3.72-2.29 4.53-4.47 4.77.36.31.68.93.68 1.87 0 1.35-.01 2.44-.01 2.77 0 .26.18.57.68.47A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+</svg>
+            Connect with Discord
+          </a>
+        </div>
+
+
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
           <a href="/api/discord-login" style={{
             backgroundColor: '#23272A',
@@ -228,4 +248,3 @@ export default function Home() {
             Connect with Discord
           </a>
         </div>
-
