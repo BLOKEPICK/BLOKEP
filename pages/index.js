@@ -27,80 +27,21 @@ export default function Home() {
 
         <section className="w-full mb-20">
   <h2 className="text-2xl font-bold mb-4">Winning Tickets</h2>
-  <div className="flex overflow-x-auto space-x-4 p-4">
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0097.webp" alt="Ticket 1" width="524" height="800" loading="lazy" className="object-cover h-full w-full" />
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-items-center p-4">
+            <div className="h-auto w-auto flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
+              <img src="/tickets/IMG_0097.webp" alt="Ticket 1" width="524" height="800" loading="lazy" className="h-auto w-full max-h-[450px] object-contain" />
             </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0118.webp" alt="Ticket 2" width="518" height="800" loading="lazy" className="object-cover h-full w-full" />
+            <div className="h-auto w-auto flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
+              <img src="/tickets/IMG_0118.webp" alt="Ticket 2" width="518" height="800" loading="lazy" className="h-auto w-full max-h-[450px] object-contain" />
             </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0150.webp" alt="Ticket 3" width="615" height="800" loading="lazy" className="object-cover h-full w-full" />
+            <div className="h-auto w-auto flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
+              <img src="/tickets/IMG_0150.webp" alt="Ticket 3" width="615" height="800" loading="lazy" className="h-auto w-full max-h-[450px] object-contain" />
             </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0220.webp" alt="Ticket 4" width="522" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0237.webp" alt="Ticket 5" width="503" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0436.webp" alt="Ticket 6" width="615" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0669.webp" alt="Ticket 7" width="800" height="427" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_0976.webp" alt="Ticket 8" width="488" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_1383.webp" alt="Ticket 9" width="757" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_1482.webp" alt="Ticket 10" width="800" height="297" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_1742.webp" alt="Ticket 11" width="800" height="375" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_1755.webp" alt="Ticket 12" width="692" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_1791.webp" alt="Ticket 13" width="576" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2403.webp" alt="Ticket 14" width="800" height="703" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2473.webp" alt="Ticket 15" width="584" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2631.webp" alt="Ticket 16" width="791" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2725.webp" alt="Ticket 17" width="787" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2791.webp" alt="Ticket 18" width="569" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2793.webp" alt="Ticket 19" width="567" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2892.webp" alt="Ticket 20" width="540" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2893.webp" alt="Ticket 21" width="800" height="404" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_2936.webp" alt="Ticket 22" width="790" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_7542.webp" alt="Ticket 23" width="526" height="800" loading="lazy" className="object-cover h-full w-full" />
-            </div>
-            <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
-              <img src="/tickets/IMG_8290.webp" alt="Ticket 24" width="625" height="800" loading="lazy" className="object-cover h-full w-full" />
+            <div className="h-auto w-auto flex items-center justify-center bg-gray-800 rounded-lg shadow overflow-hidden">
+              <img src="/tickets/IMG_0220.webp" alt="Ticket 4" width="522" height="800" loading="lazy" className="h-auto w-full max-h-[450px] object-contain" />
             </div>
   </div>
+  <div className="text-center mt-4 text-sm text-gray-400">More tickets available inside the VIP Discord</div>
 </section>
 
         <section className="text-center mb-20">
