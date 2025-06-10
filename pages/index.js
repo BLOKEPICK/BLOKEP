@@ -56,41 +56,7 @@ export default function Home() {
         <p className="text-sm text-gray-400 mb-12">Get instant access to our private VIP Discord and start betting like a pro.</p>
 
         
-<section className="w-full mb-20">
-  <h2 className="text-2xl font-bold mb-6 text-center">What You Get</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
-      <div className="text-3xl mb-2">🏆</div>
-      <h3 className="text-lg font-bold">Daily Premium Picks</h3>
-      <p className="text-sm text-gray-400">Expert-crafted plays with real unit tracking.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
-      <div className="text-3xl mb-2">💬</div>
-      <h3 className="text-lg font-bold">VIP Chat Room</h3>
-      <p className="text-sm text-gray-400">Discuss strategies with sharp bettors in real-time.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
-      <div className="text-3xl mb-2">📊</div>
-      <h3 className="text-lg font-bold">Data-Backed Analysis</h3>
-      <p className="text-sm text-gray-400">Stats and research guide every play we post.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
-      <div className="text-3xl mb-2">📈</div>
-      <h3 className="text-lg font-bold">Real Unit Tracking</h3>
-      <p className="text-sm text-gray-400">Transparency and accountability in every bet.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
-      <div className="text-3xl mb-2">🧠</div>
-      <h3 className="text-lg font-bold">Smart Betting Strategy</h3>
-      <p className="text-sm text-gray-400">Learn how to bet like a professional, not a fan.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow hover:scale-105 transition">
-      <div className="text-3xl mb-2">🔒</div>
-      <h3 className="text-lg font-bold">Private Discord Access</h3>
-      <p className="text-sm text-gray-400">A focused space for serious bettors only.</p>
-    </div>
-  </div>
-</section>
+
 
 
         <section className="w-full mb-20">
@@ -184,30 +150,34 @@ export default function Home() {
         <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
 
         
-<section className="w-full my-20 px-4">
+
+
+
+
+<section className="w-full px-4 my-20">
   <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
-  <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-300">
-    <div className="bg-[#1b1b1b] p-6 rounded-xl border border-gray-700">
-      <h3 className="text-xl font-bold mb-2 text-green-400">Three Day Pass</h3>
-      <ul className="space-y-1">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-sm text-gray-300">
+    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
+      <h3 className="text-lg font-bold text-green-400 mb-4">Three Day Pass</h3>
+      <ul className="space-y-2">
         <li>✅ Daily VIP Picks</li>
         <li>✅ Access to VIP Chat</li>
         <li>⛔ No access to Diamond Picks</li>
         <li>⏳ 3 Days of Access</li>
       </ul>
     </div>
-    <div className="bg-[#1b1b1b] p-6 rounded-xl border border-gray-700">
-      <h3 className="text-xl font-bold mb-2 text-green-400">One Week</h3>
-      <ul className="space-y-1">
+    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
+      <h3 className="text-lg font-bold text-green-400 mb-4">One Week of BLOKE PICKS</h3>
+      <ul className="space-y-2">
         <li>✅ Daily VIP Picks</li>
         <li>✅ Access to VIP Chat</li>
         <li>⛔ No access to Diamond Picks</li>
         <li>⏳ 7 Days of Access</li>
       </ul>
     </div>
-    <div className="bg-[#1b1b1b] p-6 rounded-xl border border-gray-700">
-      <h3 className="text-xl font-bold mb-2 text-green-400">One Month</h3>
-      <ul className="space-y-1">
+    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
+      <h3 className="text-lg font-bold text-green-400 mb-4">One Month of BLOKE PICKS</h3>
+      <ul className="space-y-2">
         <li>✅ Daily VIP Picks</li>
         <li>✅ Access to VIP Chat</li>
         <li>✅ Access to Diamond Picks</li>
