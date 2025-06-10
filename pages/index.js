@@ -30,6 +30,7 @@ export default function Home() {
           <section className="w-full mb-20">
   <h2 className="text-2xl font-bold mb-4">Winning Tickets</h2>
   <div className="flex overflow-x-auto space-x-4 p-4">
+
             <div className="h-[300px] w-[200px] flex items-center justify-center bg-gray-800 rounded-lg shadow">
   <img src="/tickets/IMG_0097.webp" alt="Ticket 1" width="524" height="800" loading="lazy" className="object-contain h-full w-auto" />
 </div>
