@@ -172,15 +172,7 @@ export default function Home() {
   <p className="text-center mt-4 text-sm text-gray-400">More tickets available inside the VIP Discord</p>
 </section>
 
-        <section className="text-center mb-20">
-          <h2 className="text-2xl font-bold mb-6">Who is BLOKE PICK for?</h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div className="bg-gray-900 p-6 rounded-lg">🎯 <strong>Focused Bettors</strong><br /> Want to elevate their picks with data-driven insights.</div>
-            <div className="bg-gray-900 p-6 rounded-lg">📘 <strong>Betting Newcomers</strong><br /> Just starting? Learn to bet smarter from day one.</div>
-            <div className="bg-gray-900 p-6 rounded-lg">💼 <strong>Experienced Wagers</strong><br /> Looking to sharpen their edge and stay consistent.</div>
-            <div className="bg-gray-900 p-6 rounded-lg">⚡ <strong>Smart Risk-Takers</strong><br /> Maximize upside with calculated, low-risk plays.</div>
-          </div>
-        </section>
+        
 
         <section className="max-w-xl text-center mb-20">
           <h2 className="text-2xl font-bold mb-6">FAQs</h2>
@@ -191,7 +183,42 @@ export default function Home() {
 
         <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
 
-        <footer className="text-center text-sm text-gray-500 mb-10">
+        
+<section className="w-full my-20 px-4">
+  <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
+  <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-300">
+    <div className="bg-[#1b1b1b] p-6 rounded-xl border border-gray-700">
+      <h3 className="text-xl font-bold mb-2 text-green-400">Three Day Pass</h3>
+      <ul className="space-y-1">
+        <li>✅ Daily VIP Picks</li>
+        <li>✅ Access to VIP Chat</li>
+        <li>⛔ No access to Diamond Picks</li>
+        <li>⏳ 3 Days of Access</li>
+      </ul>
+    </div>
+    <div className="bg-[#1b1b1b] p-6 rounded-xl border border-gray-700">
+      <h3 className="text-xl font-bold mb-2 text-green-400">One Week</h3>
+      <ul className="space-y-1">
+        <li>✅ Daily VIP Picks</li>
+        <li>✅ Access to VIP Chat</li>
+        <li>⛔ No access to Diamond Picks</li>
+        <li>⏳ 7 Days of Access</li>
+      </ul>
+    </div>
+    <div className="bg-[#1b1b1b] p-6 rounded-xl border border-gray-700">
+      <h3 className="text-xl font-bold mb-2 text-green-400">One Month</h3>
+      <ul className="space-y-1">
+        <li>✅ Daily VIP Picks</li>
+        <li>✅ Access to VIP Chat</li>
+        <li>✅ Access to Diamond Picks</li>
+        <li>⏳ 30 Days of Access</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<footer className="text-center text-sm text-gray-500 mb-10">
           <div className="flex justify-center space-x-6 mb-4">
             <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
