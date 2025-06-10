@@ -205,16 +205,9 @@ export default function Home() {
           </div>
           © 2025 BLOKE PICK. All rights reserved.
         </footer>
-      
-<div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
-  <a
-    href="/api/discord-login"
-    className="bg-zinc-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-all"
-  >
-    Connect with Discord
-  </a>
-</div>
-</main>
+      </main>
     </>
   );
 }
+
+// Deployment trigger update
