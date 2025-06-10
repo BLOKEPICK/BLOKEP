@@ -57,36 +57,7 @@ export default function Home() {
 
         
 
-<section className="w-full px-4 my-20">
-  <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
-  <p className="text-center text-gray-400 mb-8 text-sm">*Access to these features may vary depending on your selected plan.</p>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto text-sm text-gray-300">
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Daily Premium Picks</h3>
-      <p>Get high-conviction bets posted daily by sharp analysts. Available in all plans.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">VIP Community Chat</h3>
-      <p>Join sharp bettors and discuss plays. Included in all plans.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Diamond Picks</h3>
-      <p>Our highest-confidence bets. <span className="text-yellow-400">Only available in Monthly Plan.</span></p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Winning Ticket Slides</h3>
-      <p>See past winners and track performance. Available to all subscribers.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Real Stats & Research</h3>
-      <p>Every pick is backed by data, not guesswork. Available in all plans.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Private Discord Access</h3>
-      <p>Connect with BLOKE PICK staff & access locked channels. Included in all plans.</p>
-    </div>
-  </div>
-</section>
+
 
 
 
@@ -182,6 +153,11 @@ export default function Home() {
 
         
 
+
+
+
+
+
 <section className="w-full px-4 my-20">
   <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
   <p className="text-center text-gray-400 mb-8 text-sm">*Access to these features may vary depending on your selected plan.</p>
@@ -212,7 +188,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
 
 
 <footer className="text-center text-sm text-gray-500 mb-10">
