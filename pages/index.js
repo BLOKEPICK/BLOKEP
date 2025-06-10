@@ -2,6 +2,15 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#111111] text-white py-20">
+      <section className="w-full mb-20 px-4 text-center">
+        <h1 className="text-4xl font-bold mb-2">BLOKE PICK</h1>
+        <div className="w-24 h-1 bg-gray-700 mx-auto my-4 rounded-full" />
+        <p className="text-gray-400 max-w-xl mx-auto">
+          Your journey to smarter sports betting starts here. Join a premium community built for people who take betting seriously and want real, consistent results.
+        </p>
+        <button className="bg-green-500 hover:bg-green-600 mt-6 text-white px-6 py-2 rounded-full font-semibold">🥇 JOIN VIP</button>
+      </section>
+
       
 <section className="w-full mb-20 px-4">
   <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
@@ -42,6 +51,16 @@ export default function Home() {
   </div>
 </section>
 
+
+      <footer className="text-center mt-20 text-sm text-gray-600">
+        <div className="w-24 h-1 bg-gray-700 mx-auto mb-4 rounded-full" />
+        <div className="flex justify-center space-x-4 mb-2">
+          <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+        <div>© 2025 BLOKE PICK. All rights reserved.</div>
+      </footer>
     </main>
   )
 }
