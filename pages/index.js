@@ -14,9 +14,9 @@ export default function Home() {
         <p className="text-xl max-w-xl">Your journey to smarter sports betting starts here.</p>
         <p className="text-md text-gray-400 mb-6">Premium picks, data-driven bets, and a winning community.</p>
         
-<center> </><section className="w-full my-20 px-4">
+<section className="w-full my-20 px-4">
   <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto justify-center">
     <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
       <h3 className="text-xl font-bold mb-2">🗓️ Two Week of BLOKE PICKS</h3>
       <p className="text-3xl font-bold text-green-400 mb-4">$25</p>
@@ -42,7 +42,7 @@ export default function Home() {
       <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">🥇 JOIN VIP</button>
     </div>
   </div>
-</section> </center>
+</section>
 
 <div className="w-full flex justify-center py-8">
   <div className="h-px w-24 bg-gray-600 rounded-full opacity-50"></div>
@@ -102,4 +102,3 @@ export default function Home() {
 </main>
 </>
 );
-}
