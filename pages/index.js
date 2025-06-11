@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head' 
 
 export default function Home() {
   return (
@@ -17,17 +17,6 @@ export default function Home() {
 <section className="w-full my-20 px-4">
   <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
-      <h3 className="text-xl font-bold mb-2">🕒 Three Day Pass</h3>
-      <p className="text-3xl font-bold text-green-400 mb-4">$25</p>
-      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-left w-full max-w-xs">
-        <li>✅ Access to VIP Picks</li>
-        <li>✅ Access to VIP Chat</li>
-        <li>❌ No access to Elite Picks</li>
-        <li>⏳ 2-Weeks Access</li>
-      </ul>
-      <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">🥇 JOIN VIP</button>
-    </div>
     <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
       <h3 className="text-xl font-bold mb-2">🗓️ Two Week of BLOKE PICKS</h3>
       <p className="text-3xl font-bold text-green-400 mb-4">$25</p>
@@ -58,9 +47,6 @@ export default function Home() {
 <div className="w-full flex justify-center py-8">
   <div className="h-px w-24 bg-gray-600 rounded-full opacity-50"></div>
 </div>
-
-
-
 
 <section className="w-full px-4 my-20">
   <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
@@ -93,121 +79,27 @@ export default function Home() {
   </div>
 </section>
 
+<p className="text-sm text-gray-400 mb-12">Get instant access to our private VIP Discord and start betting like a pro.</p>
 
-
-
-        <p className="text-sm text-gray-400 mb-12">Get instant access to our private VIP Discord and start betting like a pro.</p>
-
-        
-
-
-
-
-
-        <section className="w-full mb-20">
+<section className="w-full mb-20">
   <h2 className="text-2xl font-bold mb-4">Winning Tickets</h2>
   <div className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide">
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0097.webp" alt="Ticket 1" width="524" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0118.webp" alt="Ticket 2" width="518" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0150.webp" alt="Ticket 3" width="615" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0220.webp" alt="Ticket 4" width="522" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0237.webp" alt="Ticket 5" width="503" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0436.webp" alt="Ticket 6" width="615" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0669.webp" alt="Ticket 7" width="800" height="427" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_0976.webp" alt="Ticket 8" width="488" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_1383.webp" alt="Ticket 9" width="757" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_1482.webp" alt="Ticket 10" width="800" height="297" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_1742.webp" alt="Ticket 11" width="800" height="375" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_1755.webp" alt="Ticket 12" width="692" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_1791.webp" alt="Ticket 13" width="576" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2403.webp" alt="Ticket 14" width="800" height="703" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2473.webp" alt="Ticket 15" width="584" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2631.webp" alt="Ticket 16" width="791" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2725.webp" alt="Ticket 17" width="787" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2791.webp" alt="Ticket 18" width="569" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2793.webp" alt="Ticket 19" width="567" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2892.webp" alt="Ticket 20" width="540" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2893.webp" alt="Ticket 21" width="800" height="404" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_2936.webp" alt="Ticket 22" width="790" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_7542.webp" alt="Ticket 23" width="526" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
-            <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
-              <img src="/tickets/IMG_8290.webp" alt="Ticket 24" width="625" height="800" loading="lazy" className="object-contain max-h-full max-w-full" />
-            </div>
+    {/* Ticket images go here */}
   </div>
   <p className="text-center mt-4 text-sm text-gray-400">More tickets available inside the VIP Discord</p>
 </section>
 
-        
-
-        
-
-        <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
-
-        
-
-
-
-
-
-
-
-
+<div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
 
 <footer className="text-center text-sm text-gray-500 mb-10">
-          <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
-          </div>
-          © 2025 BLOKE PICK. All rights reserved.
-        </footer>
-      </main>
-    </>
-  );
+  <div className="flex justify-center space-x-6 mb-4">
+    <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
+  </div>
+  © 2025 BLOKE PICK. All rights reserved.
+</footer>
+</main>
+</>
+);
 }
