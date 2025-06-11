@@ -23,7 +23,7 @@ export default function Home() {
       <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center w-full max-w-xs">
         <li>✅ Access to VIP Picks</li>
         <li>✅ Access to VIP Chat</li>
-        <li>❌ Access to Bankroll Guide</li>
+        <li>❌ No access to Bankroll Guide</li>
         <li>❌ No access to Elite Picks</li>
         <li>⏳ 2-Weeks Access</li>
       </ul>
