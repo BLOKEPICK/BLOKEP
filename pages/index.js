@@ -1,6 +1,7 @@
-import Head from 'next/head' 
+import React from 'react';
+import Head from 'next/head';
 
-export default function Home() 
+export default function Home() {
   return (
     <>
       <Head>
@@ -13,7 +14,7 @@ export default function Home()
         <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
         <p className="text-xl max-w-xl">Your journey to smarter sports betting starts here.</p>
         <p className="text-md text-gray-400 mb-6">Premium picks, data-driven bets, and a winning community.</p>
-        
+
 <section className="w-full my-20 px-4">
   <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto justify-center">
@@ -84,7 +85,9 @@ export default function Home()
 <section className="w-full mb-20">
   <h2 className="text-2xl font-bold mb-4">Winning Tickets</h2>
   <div className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide">
-    {/* Ticket images go here */}
+    <div className="flex-shrink-0 w-[220px] h-[350px] bg-gray-800 rounded-lg shadow overflow-hidden flex items-center justify-center">
+      <span className="text-gray-500">Ticket images go here</span>
+    </div>
   </div>
   <p className="text-center mt-4 text-sm text-gray-400">More tickets available inside the VIP Discord</p>
 </section>
@@ -101,4 +104,5 @@ export default function Home()
 </footer>
 </main>
 </>
-);
+  );
+}
