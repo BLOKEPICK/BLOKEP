@@ -20,7 +20,7 @@ export default function Home() {
     <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
       <h3 className="text-xl font-bold mb-2">🗓️ Two Week of BLOKE PICKS</h3>
       <p className="text-3xl font-bold text-green-400 mb-4">$25</p>
-      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-left w-full max-w-xs">
+      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center w-full max-w-xs">
         <li>✅ Access to VIP Picks</li>
         <li>✅ Access to VIP Chat</li>
         <li>❌ Access to Bankroll Guide</li>
@@ -32,7 +32,7 @@ export default function Home() {
     <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
       <h3 className="text-xl font-bold mb-2">📅 One Month of BLOKE PICKS</h3>
       <p className="text-3xl font-bold text-green-400 mb-4">$75</p>
-      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-left w-full max-w-xs">
+      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center w-full max-w-xs">
         <li>✅ Access to VIP Picks</li>
         <li>✅ Access to VIP Chat</li>
         <li>✅ Access to Bankroll Guide</li>
