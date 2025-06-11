@@ -65,7 +65,7 @@ export default function Home() {
       <p>Join sharp bettors and discuss plays. Included in all plans.</p>
     </div>
     <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Diamond Picks</h3>
+      <h3 className="text-lg font-bold text-green-400 mb-4">Elite Picks</h3>
       <p>Our highest-confidence bets. <span className="text-yellow-400">Only available in Monthly Plan.</span></p>
     </div>
     <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
