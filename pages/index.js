@@ -52,6 +52,15 @@ export default function Home() {
     </div>
   </div>
 </section>
+<div className="flex justify-center mt-8 mb-12">
+  <a
+    href="/api/discord-login"
+    className="bg-zinc-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all"
+  >
+    Connect with Discord
+  </a>
+</div>
+
 
 <div className="w-full flex justify-center py-8">
   <div className="h-px w-24 bg-gray-600 rounded-full opacity-50"></div>
@@ -90,6 +99,15 @@ export default function Home() {
     </div>
   </div>
 </section>
+<div className="flex justify-center mt-8 mb-12">
+  <a
+    href="/api/discord-login"
+    className="bg-zinc-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all"
+  >
+    Connect with Discord
+  </a>
+</div>
+
 
 
 
@@ -180,6 +198,15 @@ export default function Home() {
   </div>
   <p className="text-center mt-4 text-sm text-gray-400">More tickets available inside the VIP Discord</p>
 </section>
+<div className="flex justify-center mt-8 mb-12">
+  <a
+    href="/api/discord-login"
+    className="bg-zinc-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all"
+  >
+    Connect with Discord
+  </a>
+</div>
+
 
         
 
@@ -209,5 +236,3 @@ export default function Home() {
     </>
   );
 }
-
-// Deployment trigger update
