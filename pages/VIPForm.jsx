@@ -1,10 +1,30 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 
 export default function VIPForm() {
-  const token =
-    typeof window !== "undefined"
-      ? new URLSearchParams(window.location.search).get("token")
-      : null;
+  const [token, setToken] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const t = new URLSearchParams(window.location.search).get("token");
+    if (t) setToken(t);
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = new FormData(e.target);
+
+    await fetch("https://formspree.io/f/manjoblp", {
+      method: "POST",
+      body: form,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    setSubmitted(true);
+  };
 
   return (
     <>
@@ -25,52 +45,60 @@ export default function VIPForm() {
           Premium picks, data-driven bets, and a winning community.
         </p>
 
-        <form
-          action="https://formspree.io/f/manjoblp"
-          method="POST"
-          className="w-full max-w-lg space-y-4 text-left bg-white p-6 rounded-xl shadow-md"
-        >
-          <input type="hidden" name="token" value={token || ""} />
-
-          <label className="block">
-            <span className="text-sm font-medium text-black">
-              Discord Username <span className="text-red-500">*</span>
-            </span>
-            <input
-              type="text"
-              name="discord"
-              required
-              className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
-            />
-          </label>
-
-          <label className="block">
-            <span className="text-sm font-medium text-black">
-              Email used for payment <span className="text-red-500">*</span>
-            </span>
-            <input
-              type="email"
-              name="email"
-              required
-              className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
-            />
-          </label>
-
-          <label className="block">
-            <span className="text-sm font-medium text-black">Additional comments (optional)</span>
-            <textarea
-              name="comment"
-              className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
-            />
-          </label>
-
-          <button
-            type="submit"
-            className="w-full bg-black text-white font-semibold py-2 px-4 rounded-xl hover:opacity-80 transition"
+        {!submitted ? (
+          <form
+            onSubmit={handleSubmit}
+            className="w-full max-w-lg space-y-4 text-left bg-white p-6 rounded-xl shadow-md"
           >
-            Submit
-          </button>
-        </form>
+            <input type="hidden" name="token" value={token} />
+
+            <label className="block">
+              <span className="text-sm font-medium text-black">
+                Discord Username <span className="text-red-500">*</span>
+              </span>
+              <input
+                type="text"
+                name="discord"
+                required
+                className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
+              />
+            </label>
+
+            <label className="block">
+              <span className="text-sm font-medium text-black">
+                Email used for payment <span className="text-red-500">*</span>
+              </span>
+              <input
+                type="email"
+                name="email"
+                required
+                className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
+              />
+            </label>
+
+            <label className="block">
+              <span className="text-sm font-medium text-black">
+                Additional comments (optional)
+              </span>
+              <textarea
+                name="comment"
+                className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
+              />
+            </label>
+
+            <button
+              type="submit"
+              className="w-full bg-black text-white font-semibold py-2 px-4 rounded-xl hover:opacity-80 transition"
+            >
+              Submit
+            </button>
+          </form>
+        ) : (
+          <div className="bg-green-100 text-green-800 p-6 rounded-xl text-center max-w-lg">
+            <h2 className="text-2xl font-semibold mb-2">✅ Thank you!</h2>
+            <p>We've received your form. Our team will add you to the VIP server shortly.</p>
+          </div>
+        )}
       </main>
     </>
   );
