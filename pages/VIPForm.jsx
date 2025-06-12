@@ -7,26 +7,47 @@ export default function VIPForm() {
   const [isValid, setIsValid] = useState(null);
 
   useEffect(() => {
-    if (!token) return;
-    
+    // Si no hay token, redirigir al home
+    if (!token) {
+      router.push('/');
+      return;
+    }
+
+    // Verificar token
     const verifyToken = async () => {
-      const res = await fetch(`https://node-type-checker-blokepick.replit.app/verify?token=${token}`);
-      const data = await res.json();
-      setIsValid(data.valid);
+      try {
+        const res = await fetch(`https://node-type-checker-blokepick.replit.app/verify?token=${token}`);
+        const data = await res.json();
+        setIsValid(data.valid);
+      } catch (err) {
+        console.error('Error al verificar el token:', err);
+        setIsValid(false);
+      }
     };
 
     verifyToken();
   }, [token]);
 
-  if (isValid === null) return <p>Verificando...</p>;
-  if (!isValid) return <p>Token inválido o expirado.</p>;
+  if (isValid === null) return <p>Verificando acceso VIP...</p>;
+
+  if (!isValid) {
+    return (
+      <div style={{ padding: '2rem', textAlign: 'center' }}>
+        <h2>❌ Acceso denegado</h2>
+        <p>Este enlace ya ha sido usado o es inválido.</p>
+        <button onClick={() => router.push('/')}>Volver al inicio</button>
+      </div>
+    );
+  }
 
   return (
-    <form method="POST" action="/api/submit-form">
-      <h1>VIP Access Form</h1>
-      <input name="discord" placeholder="Tu usuario de Discord" required />
-      <input name="email" type="email" placeholder="Correo electrónico" required />
-      <button type="submit">Enviar</button>
-    </form>
+    <div style={{ padding: '2rem' }}>
+      <h1>🎟️ VIP Access Form</h1>
+      <form method="POST" action="/api/submit-form">
+        <input name="discord" placeholder="Tu usuario de Discord" required style={{ display: 'block', margin: '1rem 0', padding: '0.5rem' }} />
+        <input name="email" type="email" placeholder="Correo electrónico" required style={{ display: 'block', margin: '1rem 0', padding: '0.5rem' }} />
+        <button type="submit" style={{ padding: '0.5rem 1rem' }}>Enviar</button>
+      </form>
+    </div>
   );
 }
