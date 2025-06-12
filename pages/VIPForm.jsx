@@ -104,7 +104,7 @@ export default function VIPForm() {
               href="https://discord.gg/HmckBcfPfm"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 bg-black text-white font-semibold py-2 px-6 rounded-xl hover:opacity-80 transition"
+              className="inline-block mt-4 bg-blurple text-white font-semibold py-2 px-6 rounded-xl hover:opacity-80 transition"
             >
               Join our Discord
             </a>
