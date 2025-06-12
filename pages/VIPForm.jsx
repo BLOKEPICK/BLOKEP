@@ -1,61 +1,12 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Head from "next/head";
 
 export default function VIPForm() {
-  const router = useRouter();
-  const [status, setStatus] = useState("loading"); // loading, valid, invalid
-  const [token, setToken] = useState(null);
+  // Leer token directamente del query string si está presente
+  const token =
+    typeof window !== "undefined"
+      ? new URLSearchParams(window.location.search).get("token")
+      : null;
 
-  useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const t = searchParams.get("token");
-
-    if (!t) {
-      // Redirigir si no hay token
-      router.push("/");
-      return;
-    }
-
-    setToken(t);
-
-    // Validar token con el backend
-    fetch(`https://node-type-checker-blokepick.replit.app/verify?token=${t}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.valid) {
-          setStatus("valid");
-        } else {
-          setStatus("invalid");
-        }
-      })
-      .catch(() => {
-        setStatus("invalid");
-      });
-  }, []);
-
-  if (status === "loading") {
-    return <div className="text-center mt-10">🔄 Verifying access...</div>;
-  }
-
-  if (status === "invalid") {
-    return (
-      <main className="flex flex-col items-center justify-center h-screen text-center px-4">
-        <h1 className="text-2xl font-bold text-red-600">❌ Access Denied</h1>
-        <p className="text-gray-500 mt-2">
-          This link is either invalid or has already been used.
-        </p>
-        <button
-          onClick={() => router.push("/")}
-          className="mt-4 px-4 py-2 bg-black text-white rounded-xl hover:opacity-80 transition"
-        >
-          Return Home
-        </button>
-      </main>
-    );
-  }
-
-  // ✅ Token válido: mostrar formulario
   return (
     <>
       <Head>
@@ -80,7 +31,7 @@ export default function VIPForm() {
           method="POST"
           className="w-full max-w-lg space-y-4 text-left"
         >
-          <input type="hidden" name="token" value={token} />
+          <input type="hidden" name="token" value={token || ""} />
           <label className="block">
             <span className="text-sm font-medium">
               Discord Username <span className="text-red-500">*</span>
