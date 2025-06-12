@@ -12,7 +12,7 @@ export default function VIPFormPage() {
 
     const checkToken = async () => {
       try {
-        const res = await fetch(`https://eog9g8jnhm3sjxr.m.pipedream.ne?token=${token}`);
+        const res = await fetch(`https://eog9g8jnhm3sjxr.m.pipedream.net?token=${token}`);
         const data = await res.json();
 
         if (data.valid) {
