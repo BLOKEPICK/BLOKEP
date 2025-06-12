@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 export default function VIPForm() {
-  // Leer token directamente del query string si está presente
   const token =
     typeof window !== "undefined"
       ? new URLSearchParams(window.location.search).get("token")
@@ -29,38 +28,39 @@ export default function VIPForm() {
         <form
           action="https://formspree.io/f/manjoblp"
           method="POST"
-          className="w-full max-w-lg space-y-4 text-left"
+          className="w-full max-w-lg space-y-4 text-left bg-white p-6 rounded-xl shadow-md"
         >
           <input type="hidden" name="token" value={token || ""} />
+
           <label className="block">
-            <span className="text-sm font-medium">
+            <span className="text-sm font-medium text-black">
               Discord Username <span className="text-red-500">*</span>
             </span>
             <input
               type="text"
               name="discord"
               required
-              className="mt-1 w-full border border-gray-300 p-2 rounded-lg"
+              className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
             />
           </label>
 
           <label className="block">
-            <span className="text-sm font-medium">
+            <span className="text-sm font-medium text-black">
               Email used for payment <span className="text-red-500">*</span>
             </span>
             <input
               type="email"
               name="email"
               required
-              className="mt-1 w-full border border-gray-300 p-2 rounded-lg"
+              className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
             />
           </label>
 
           <label className="block">
-            <span className="text-sm font-medium">Additional comments (optional)</span>
+            <span className="text-sm font-medium text-black">Additional comments (optional)</span>
             <textarea
               name="comment"
-              className="mt-1 w-full border border-gray-300 p-2 rounded-lg"
+              className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
             />
           </label>
 
