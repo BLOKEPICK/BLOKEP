@@ -1,33 +1,32 @@
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
-export default function VIPFormPage() {
+export default function VIPForm() {
   const router = useRouter();
   const { token } = router.query;
-  const [status, setStatus] = useState('loading');
+  const [isValid, setIsValid] = useState(null);
 
   useEffect(() => {
     if (!token) return;
-
-    const checkToken = async () => {
-      const res = await fetch('https://eog9g8jnhm3sjxr.m.pipedream.net?token=' + token);
+    
+    const verifyToken = async () => {
+      const res = await fetch(`https://node-type-checker-blokepick.replit.app/verify?token=${token}`);
       const data = await res.json();
-      setStatus(data.valid ? 'valid' : 'invalid');
+      setIsValid(data.valid);
     };
-    checkToken();
+
+    verifyToken();
   }, [token]);
 
-  if (status === 'loading') return <p>Validando acceso...</p>;
-  if (status === 'invalid') return <p>❌ Token inválido o expirado.</p>;
+  if (isValid === null) return <p>Verificando...</p>;
+  if (!isValid) return <p>Token inválido o expirado.</p>;
 
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>Formulario VIP</h1>
-      <form onSubmit={(e) => e.preventDefault()}>
-        <label>Email usado en Stripe:<br /><input type="email" required /></label><br /><br />
-        <label>Discord ID:<br /><input type="text" required /></label><br /><br />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <form method="POST" action="/api/submit-form">
+      <h1>VIP Access Form</h1>
+      <input name="discord" placeholder="Tu usuario de Discord" required />
+      <input name="email" type="email" placeholder="Correo electrónico" required />
+      <button type="submit">Enviar</button>
+    </form>
   );
 }
