@@ -12,7 +12,6 @@ export default function VIPForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const form = new FormData(e.target);
 
     await fetch("https://formspree.io/f/manjoblp", {
@@ -38,9 +37,11 @@ export default function VIPForm() {
       </Head>
 
       <main className="flex flex-col items-center justify-center px-4 text-center max-w-5xl mx-auto">
-        <h1 className="text-5xl font-bold mt-16 tracking-widest">BLOKE PICK</h1>
+        <h1 className="text-5xl font-bold mt-16 tracking-widest text-white">BLOKE PICK</h1>
         <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
-        <p className="text-xl max-w-xl">Your journey to smarter sports betting starts here.</p>
+        <p className="text-xl max-w-xl text-white">
+          Your journey to smarter sports betting starts here.
+        </p>
         <p className="text-md text-gray-400 mb-6">
           Premium picks, data-driven bets, and a winning community.
         </p>
@@ -96,7 +97,17 @@ export default function VIPForm() {
         ) : (
           <div className="bg-green-100 text-green-800 p-6 rounded-xl text-center max-w-lg">
             <h2 className="text-2xl font-semibold mb-2">✅ Thank you!</h2>
-            <p>We've received your form. Our team will add you to the VIP server shortly.</p>
+            <p className="mb-4">
+              We've received your form. Our team will add you to the VIP server shortly.
+            </p>
+            <a
+              href="https://discord.gg/HmckBcfPfm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 bg-black text-white font-semibold py-2 px-6 rounded-xl hover:opacity-80 transition"
+            >
+              Join our Discord
+            </a>
           </div>
         )}
       </main>
