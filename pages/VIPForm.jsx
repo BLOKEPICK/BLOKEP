@@ -7,6 +7,9 @@ export default function VIPForm() {
   const [isValid, setIsValid] = useState(null);
 
   useEffect(() => {
+    // Esperar a que router esté listo
+    if (!router.isReady) return;
+
     // Si no hay token, redirigir al home
     if (!token) {
       router.push('/');
@@ -26,9 +29,9 @@ export default function VIPForm() {
     };
 
     verifyToken();
-  }, [token]);
+  }, [router.isReady, token]);
 
-  if (isValid === null) return <p>Verificando acceso VIP...</p>;
+  if (!router.isReady || isValid === null) return <p>Verificando acceso VIP...</p>;
 
   if (!isValid) {
     return (
