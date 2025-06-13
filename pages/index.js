@@ -27,7 +27,7 @@ export default function Home() {
         <li>❌ No access to Elite Picks</li>
         <li>⏳ 2-Weeks Access</li>
       </ul>
-      <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">🥇 JOIN VIP</button>
+      <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">Available 6/16/25</button>
     </div>
     <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
       <h3 className="text-xl font-bold mb-2">📅 One Month of BLOKE PICKS</h3>
@@ -39,7 +39,7 @@ export default function Home() {
         <li>✅ Access to Elite Picks</li>
         <li>⏳ 30-Day Access</li>
       </ul>
-      <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">🥇 JOIN VIP</button>
+      <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">Available 6/16/25</button>
     </div>
   </div>
 </section>
