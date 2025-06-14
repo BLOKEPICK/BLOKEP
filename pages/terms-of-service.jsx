@@ -47,7 +47,7 @@ export default function TermsOfService() {
             Payments are processed exclusively via Stripe. Any other platform claiming to represent BLOKE PICK is fraudulent.
           </p>
           <p>
-            Users who initiate a chargeback before joining the Discord will receive a refund. However, if access to the VIP Discord has been granted, no refund will be issued. For more details, please refer to our <a href="/refund-policy" className="text-blue-400 underline">Refund Policy</a>.
+            Users who initiate a chargeback before joining the Discord will receive a refund. However, if access to the VIP Discord has been granted, no refund will be issued. For more details, please refer to our <a href="https://blokepick.com/refund-policy" className="text-blue-400 underline">Refund Policy</a>.
           </p>
 
           <h2 className="text-2xl font-semibold text-white">5. Community Rules</h2>
