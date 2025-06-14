@@ -39,7 +39,7 @@ export default function RefundPolicy() {
           <h2 className="text-2xl font-semibold text-white">3. How to Request a Refund</h2>
           <p>
             If you believe you are eligible for a refund, please contact us as soon as possible through our official form at: <br />
-            <a href="https://blokepick.com/contact-us" className="text-blue-400 underline">https://blokepick.com/contact-us</a>
+            <a href="https://blokepick.com/contact-us" className="text-blue-400 underline">contact form</a>
           </p>
           <p>
             Include your full name, email address used for payment, and any relevant order information to help us process your request promptly.
