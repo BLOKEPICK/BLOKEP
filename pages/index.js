@@ -192,15 +192,7 @@ export default function Home() {
 
 
 <footer className="text-center text-sm text-gray-500 mb-10">
-          <div className="flex flex-col items-center space-y-3">
-            <a href="https://blokepick.com/terms-of-service" className="text-blue-400 underline hover:text-white transition">Terms of Service</a>
-            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
-            <a href="https://blokepick.com/privacy-policy" className="text-blue-400 underline hover:text-white transition">Privacy Policy</a>
-            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
-            <a href="https://blokepick.com/contact-us" className="text-blue-400 underline hover:text-white transition">Contact Us</a>
-            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
-          </div>
-          <div className="flex justify-center space-x-6 text-2xl mt-4">
+          <div className="flex justify-center space-x-6 text-2xl mb-4">
             <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="hover:text-white transition" />
             </a>
@@ -211,6 +203,15 @@ export default function Home() {
               <FaTiktok className="hover:text-white transition" />
             </a>
           </div>
+
+          <div className="flex justify-center flex-wrap gap-4 text-blue-400 mb-4">
+            <a href="https://blokepick.com/terms-of-service" className="hover:text-white transition">Terms of Service</a>
+            <span className="text-gray-500">|</span>
+            <a href="https://blokepick.com/privacy-policy" className="hover:text-white transition">Privacy Policy</a>
+            <span className="text-gray-500">|</span>
+            <a href="https://blokepick.com/contact-us" className="hover:text-white transition">Contact Us</a>
+          </div>
+
           <p className="mt-4">© 2025 BLOKE PICK. All rights reserved.</p>
         </footer>
       </main>
