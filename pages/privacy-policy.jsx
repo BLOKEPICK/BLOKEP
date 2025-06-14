@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-2xl font-semibold text-white">3. Data Retention and Deletion</h2>
           <p>
-            We retain your data only while your subscription is active. If your subscription ends, your data is automatically removed. You may request deletion at any time through our <a href="/contact" className="text-blue-400 underline">contact form</a>, but we may temporarily retain your contact for administrative follow-ups.
+            We retain your data only while your subscription is active. If your subscription ends, your data is automatically removed. You may request deletion at any time through our <a href="https://blokepick.com/contact-us" className="text-blue-400 underline">contact form</a>, but we may temporarily retain your contact for administrative follow-ups.
           </p>
 
           <h2 className="text-2xl font-semibold text-white">4. Data Security</h2>
@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-2xl font-semibold text-white">7. Contact</h2>
           <p>
-            For questions or concerns regarding this policy, please contact us through our <a href="/contact" className="text-blue-400 underline">contact form</a>.
+            For questions or concerns regarding this policy, please contact us through our <a href="https://blokepick.com/contact-us" className="text-blue-400 underline">contact form</a>.
           </p>
         </section>
 

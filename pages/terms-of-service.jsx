@@ -80,7 +80,7 @@ export default function TermsOfService() {
 
           <h2 className="text-2xl font-semibold text-white">9. Contact</h2>
           <p>
-            Questions or concerns? Please reach out through our <a href="/contact" className="text-blue-400 underline">contact form</a>.
+            Questions or concerns? Please reach out through our <a href="https://blokepick.com/contact-us" className="text-blue-400 underline">contact form</a>.
           </p>
         </section>
 
