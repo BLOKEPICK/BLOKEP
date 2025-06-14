@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { SiX } from "react-icons/si";
 
 export default function TermsOfService() {
   return (
@@ -91,7 +92,7 @@ export default function TermsOfService() {
               <FaInstagram className="hover:text-white transition" />
             </a>
             <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="hover:text-white transition" />
+              <SiX className="hover:text-white transition" />
             </a>
             <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
               <FaTiktok className="hover:text-white transition" />
