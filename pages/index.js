@@ -189,13 +189,25 @@ export default function Home() {
 
 
 
-<footer className="text-center text-sm text-gray-500 mb-10">
-          <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
+<footer className="text-center text-gray-400 space-y-4">
+          <div className="flex justify-center space-x-6 text-2xl">
+            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-white transition" />
+            </a>
+            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
+              <SiX className="hover:text-white transition" />
+            </a>
+            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="hover:text-white transition" />
+            </a>
           </div>
-          © 2025 BLOKE PICK. All rights reserved.
+
+          <a
+            href="https://blokepick.com/"
+            className="inline-block mt-2 text-sm text-blue-400 underline hover:text-white transition"
+          >
+            ← Back to Home
+          </a>
         </footer>
       </main>
     </>
