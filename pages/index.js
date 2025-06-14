@@ -1,4 +1,6 @@
-import Head from 'next/head'
+mport Head from 'next/head';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { SiX } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -179,50 +181,28 @@ export default function Home() {
 
         <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
 
-        
-
-
-
-
-
-
-
-
-
-import { FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
-
-<footer className="text-center text-sm text-gray-500 mb-10">
-  <div className="flex justify-center space-x-6 mb-4">
-    <a
-      href="https://www.instagram.com/blokepick/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center space-x-2 text-gray-500 hover:text-white transition"
-    >
-      <FaInstagram />
-      <span>Instagram</span>
-    </a>
-    <a
-      href="https://x.com/BlokePick"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center space-x-2 text-gray-500 hover:text-white transition"
-    >
-      <FaXTwitter />
-      <span>X</span>
-    </a>
-    <a
-      href="https://www.tiktok.com/@blokepick"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center space-x-2 text-gray-500 hover:text-white transition"
-    >
-      <FaTiktok />
-      <span>TikTok</span>
-    </a>
-  </div>
-  © 2025 BLOKE PICK. All rights reserved.
-</footer>
+        <footer className="text-center text-sm text-gray-500 mb-10">
+          <div className="flex flex-col items-center space-y-3">
+            <a href="https://blokepick.com/terms-of-service" className="text-blue-400 underline hover:text-white transition">Terms of Service</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
+            <a href="https://blokepick.com/privacy-policy" className="text-blue-400 underline hover:text-white transition">Privacy Policy</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
+            <a href="https://blokepick.com/contact-us" className="text-blue-400 underline hover:text-white transition">Contact Us</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
+          </div>
+          <div className="flex justify-center space-x-6 text-2xl mt-4">
+            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-white transition" />
+            </a>
+            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
+              <SiX className="hover:text-white transition" />
+            </a>
+            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="hover:text-white transition" />
+            </a>
+          </div>
+          <p className="mt-4">© 2025 BLOKE PICK. All rights reserved.</p>
+        </footer>
       </main>
     </>
   );
