@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
 
 export default function TermsOfService() {
   return (
@@ -81,6 +82,29 @@ export default function TermsOfService() {
             Questions or concerns? Please reach out through our <a href="/contact" className="text-blue-400 underline">contact form</a>.
           </p>
         </section>
+
+        <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
+
+        <footer className="text-center text-gray-400 space-y-4">
+          <div className="flex justify-center space-x-6 text-2xl">
+            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-white transition" />
+            </a>
+            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="hover:text-white transition" />
+            </a>
+            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="hover:text-white transition" />
+            </a>
+          </div>
+
+          <a
+            href="https://blokepick.com/"
+            className="inline-block mt-2 text-sm text-blue-400 underline hover:text-white transition"
+          >
+            ← Back to Home
+          </a>
+        </footer>
       </main>
     </>
   );
