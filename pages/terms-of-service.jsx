@@ -1,115 +1,86 @@
-import { useState, useEffect } from "react";
 import Head from "next/head";
 
-export default function VIPForm() {
-  const [token, setToken] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    const t = new URLSearchParams(window.location.search).get("token");
-    if (t) setToken(t);
-  }, []);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const form = new FormData(e.target);
-
-    await fetch("https://formspree.io/f/manjoblp", {
-      method: "POST",
-      body: form,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    setSubmitted(true);
-  };
-
+export default function TermsOfService() {
   return (
     <>
       <Head>
-        <title>BLOKE PICK | Smarter Betting Starts Here</title>
+        <title>Terms of Service | BLOKE PICK</title>
         <meta
           name="description"
-          content="Join BLOKE PICK — the premium sports betting community built for disciplined bettors. Access daily picks, smart parlays, real data analysis, and a private VIP Discord where winning is the mindset. Stop guessing. Start betting smarter."
+          content="Read the terms and conditions for using BLOKE PICK — our premium sports betting community."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center px-4 text-center max-w-5xl mx-auto">
-        <h1 className="text-5xl font-bold mt-16 tracking-widest text-white">BLOKE PICK</h1>
+      <main className="flex flex-col items-center justify-center px-4 py-16 text-left max-w-4xl mx-auto text-white">
+        <h1 className="text-4xl font-bold mb-4 text-center tracking-widest">Terms of Service</h1>
         <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
-        <p className="text-xl max-w-xl text-white">
-          Your journey to smarter sports betting starts here.
-        </p>
-        <p className="text-md text-gray-400 mb-6">
-          Premium picks, data-driven bets, and a winning community.
-        </p>
 
-        {!submitted ? (
-          <form
-            onSubmit={handleSubmit}
-            className="w-full max-w-lg space-y-4 text-left bg-white p-6 rounded-xl shadow-md"
-          >
-            <input type="hidden" name="token" value={token} />
+        <section className="space-y-6 text-base text-gray-300">
+          <p>
+            These Terms of Service ("Terms") govern your access to and use of BLOKE PICK ("we", "our", or "us"). By subscribing to or participating in any of our services, including our private Discord community, you agree to be bound by these Terms.
+          </p>
 
-            <label className="block">
-              <span className="text-sm font-medium text-black">
-                Discord Username <span className="text-red-500">*</span>
-              </span>
-              <input
-                type="text"
-                name="discord"
-                required
-                className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
-              />
-            </label>
+          <h2 className="text-2xl font-semibold text-white">1. Eligibility</h2>
+          <p>
+            You must be at least 21 years old to use BLOKE PICK. Our services are only available to residents of U.S. states where sports betting is legal and to individuals in countries that permit sports wagering.
+          </p>
 
-            <label className="block">
-              <span className="text-sm font-medium text-black">
-                Email used for payment <span className="text-red-500">*</span>
-              </span>
-              <input
-                type="email"
-                name="email"
-                required
-                className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
-              />
-            </label>
+          <h2 className="text-2xl font-semibold text-white">2. Services Provided</h2>
+          <p>
+            BLOKE PICK offers paid access to a private Discord server where members receive sports betting analysis, recommendations, and community interaction. Access is granted via subscription plans:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li>$25 every two weeks (+ tax)</li>
+            <li>$75 every 30 days (+ tax) – auto-renewed unless canceled</li>
+          </ul>
 
-            <label className="block">
-              <span className="text-sm font-medium text-black">
-                Additional comments (optional)
-              </span>
-              <textarea
-                name="comment"
-                className="mt-1 w-full border border-gray-300 p-2 rounded-lg text-black"
-              />
-            </label>
+          <h2 className="text-2xl font-semibold text-white">3. No Guarantee of Results</h2>
+          <p>
+            While we provide data-driven recommendations, BLOKE PICK does not guarantee any betting outcomes. Participation involves financial risk, and all decisions are made at your own discretion.
+          </p>
 
-            <button
-              type="submit"
-              className="w-full bg-black text-white font-semibold py-2 px-4 rounded-xl hover:opacity-80 transition"
-            >
-              Submit
-            </button>
-          </form>
-        ) : (
-          <div className="bg-green-100 text-green-800 p-6 rounded-xl text-center max-w-lg">
-            <h2 className="text-2xl font-semibold mb-2">✅ Thank you!</h2>
-            <p className="mb-4">
-              We've received your form. Our team will add you to the VIP server shortly.
-            </p>
-            <a
-              href="https://discord.gg/HmckBcfPfm"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-4 bg-black text-white font-semibold py-2 px-6 rounded-xl hover:opacity-80 transition"
-            >
-              Join our Discord
-            </a>
-          </div>
-        )}
+          <h2 className="text-2xl font-semibold text-white">4. Payments & Refunds</h2>
+          <p>
+            Payments are processed exclusively via Stripe. Any other platform claiming to represent BLOKE PICK is fraudulent.
+          </p>
+          <p>
+            Users who initiate a chargeback before joining the Discord will receive a refund. However, if access to the VIP Discord has been granted, no refund will be issued. For more details, please refer to our <a href="/refund-policy" className="text-blue-400 underline">Refund Policy</a>.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white">5. Community Rules</h2>
+          <p>
+            Users are expected to follow all community rules posted within our Discord server, including but not limited to:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li>Bet responsibly</li>
+            <li>No hate speech or NSFW content</li>
+            <li>Respect admins and mods</li>
+          </ul>
+          <p>
+            Violating rules results in two warnings. A third violation leads to permanent removal without refund.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white">6. Intellectual Property</h2>
+          <p>
+            Content shared in BLOKE PICK is for personal use only. Sharing VIP plays or insights publicly is discouraged and may result in removal.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white">7. Legal Jurisdiction</h2>
+          <p>
+            These Terms shall be governed by and construed in accordance with the laws of the State of New York, USA. Any disputes shall be resolved in the appropriate courts located in New York.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white">8. Changes to Terms</h2>
+          <p>
+            We reserve the right to modify these Terms at any time. Continued use of the service implies acceptance of any updates.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white">9. Contact</h2>
+          <p>
+            Questions or concerns? Please reach out through our <a href="/contact" className="text-blue-400 underline">contact form</a>.
+          </p>
+        </section>
       </main>
     </>
   );
