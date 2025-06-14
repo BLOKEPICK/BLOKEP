@@ -1,4 +1,4 @@
-mport Head from 'next/head';
+import Head from 'next/head';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 
@@ -181,7 +181,17 @@ export default function Home() {
 
         <div className="w-24 h-px bg-gray-600 my-10 rounded-full opacity-50" />
 
-        <footer className="text-center text-sm text-gray-500 mb-10">
+        
+
+
+
+
+
+
+
+
+
+<footer className="text-center text-sm text-gray-500 mb-10">
           <div className="flex flex-col items-center space-y-3">
             <a href="https://blokepick.com/terms-of-service" className="text-blue-400 underline hover:text-white transition">Terms of Service</a>
             <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
