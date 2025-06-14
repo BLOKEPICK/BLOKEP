@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
+import { FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
 
 export default function PrivacyPolicy() {
   return (
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
               <FaInstagram className="hover:text-white transition" />
             </a>
             <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter className="hover:text-white transition" />
+              <FaTwitter className="hover:text-white transition" />
             </a>
             <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
               <FaTiktok className="hover:text-white transition" />
