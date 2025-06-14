@@ -189,14 +189,40 @@ export default function Home() {
 
 
 
+import { FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
+
 <footer className="text-center text-sm text-gray-500 mb-10">
-          <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
-          </div>
-          © 2025 BLOKE PICK. All rights reserved.
-        </footer>
+  <div className="flex justify-center space-x-6 mb-4">
+    <a
+      href="https://www.instagram.com/blokepick/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center space-x-2 text-gray-500 hover:text-white transition"
+    >
+      <FaInstagram />
+      <span>Instagram</span>
+    </a>
+    <a
+      href="https://x.com/BlokePick"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center space-x-2 text-gray-500 hover:text-white transition"
+    >
+      <FaXTwitter />
+      <span>X</span>
+    </a>
+    <a
+      href="https://www.tiktok.com/@blokepick"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center space-x-2 text-gray-500 hover:text-white transition"
+    >
+      <FaTiktok />
+      <span>TikTok</span>
+    </a>
+  </div>
+  © 2025 BLOKE PICK. All rights reserved.
+</footer>
       </main>
     </>
   );
