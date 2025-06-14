@@ -189,24 +189,31 @@ export default function Home() {
 
 
 
-<footer className="text-center text-sm text-gray-500 mt-20 mb-10">
-          <div className="flex flex-col items-center space-y-4">
-            <a href="https://blokepick.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
-            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
-            <a href="https://blokepick.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
-            <a href="https://blokepick.com/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</a>
+<footer className="text-center text-sm text-gray-500 mb-10">
+          <div className="flex justify-center space-x-6 text-2xl mb-4">
+            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-white transition" />
+            </a>
+            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
+              <SiX className="hover:text-white transition" />
+            </a>
+            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="hover:text-white transition" />
+            </a>
           </div>
 
-          <div className="w-24 h-px bg-gray-600 my-6 rounded-full opacity-50" />
-
-          <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <div className="flex flex-col items-center space-y-3 mb-6">
+            <a href="https://blokepick.com/terms-of-service" className="text-blue-400 underline hover:text-white transition">Terms of Service</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
+            <a href="https://blokepick.com/privacy-policy" className="text-blue-400 underline hover:text-white transition">Privacy Policy</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
+            <a href="https://blokepick.com/contact-us" className="text-blue-400 underline hover:text-white transition">Contact Us</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
+            <a href="https://blokepick.com/" className="text-blue-400 underline hover:text-white transition">Back to Home</a>
+            <div className="w-24 h-px bg-gray-600 rounded-full opacity-50" />
           </div>
 
-          © 2025 BLOKE PICK. All rights reserved.
+          <p className="mt-4">© 2025 BLOKE PICK. All rights reserved.</p>
         </footer>
       </main>
     </>
