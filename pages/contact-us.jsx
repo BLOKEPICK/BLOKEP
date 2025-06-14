@@ -34,6 +34,9 @@ export default function ContactForm() {
 
       <main className="flex flex-col items-center justify-center px-4 py-16 text-left max-w-4xl mx-auto text-white">
         <h1 className="text-4xl font-bold mb-4 text-center tracking-widest">Contact Us</h1>
+        <p className="text-center text-gray-300 max-w-xl mb-6">
+          Have a question, suggestion, or issue? We’d love to hear from you. Fill out the form below and we’ll respond as soon as possible.
+        </p>
         <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
 
         {!submitted ? (
@@ -110,6 +113,13 @@ export default function ContactForm() {
               <FaTiktok className="hover:text-white transition" />
             </a>
           </div>
+
+          <a
+            href="https://blokepick.com/"
+            className="inline-block mt-2 text-sm text-blue-400 underline hover:text-white transition"
+          >
+            ← Back to Home
+          </a>
         </footer>
       </main>
     </>
