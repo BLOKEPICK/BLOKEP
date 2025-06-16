@@ -37,14 +37,16 @@ export default function VIPForm() {
       </Head>
 
       <main className="flex flex-col items-center justify-center px-4 text-center max-w-5xl mx-auto">
-        <h1 className="text-5xl font-bold mt-16 tracking-widest text-white">BLOKE PICK</h1>
-        <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
-        <p className="text-xl max-w-xl text-white">
-          Your journey to smarter sports betting starts here.
-        </p>
-        <p className="text-md text-gray-400 mb-6">
-          Premium picks, data-driven bets, and a winning community.
-        </p>
+  <h1 className="text-5xl font-bold mt-16 tracking-widest text-white">BLOKE PICK</h1>
+  <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
+  <p className="text-xl max-w-xl text-white">
+    Just one last step before joining the VIP experience.
+  </p>
+  <p className="text-md text-gray-400 mb-6">
+    To protect your access and prevent spam, please enter your Discord username and the email you used during payment. 
+    This helps us verify your purchase and assign your VIP role securely.
+  </p>
+
 
         {!submitted ? (
           <form
