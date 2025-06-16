@@ -101,7 +101,7 @@ export default function VIPForm() {
               We've received your form. Our team will add you to the VIP server shortly.
             </p>
             <a
-              href="https://discord.gg/HmckBcfPfm"
+              href="https://discord.gg/a52XSeDX"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4 bg-black text-white font-semibold py-2 px-6 rounded-xl hover:opacity-80 transition"
