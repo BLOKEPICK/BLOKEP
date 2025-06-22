@@ -27,22 +27,22 @@ export default function Home() {
             {[
               {
                 icon: '🕐', title: '1 Day Access', price: '$50.00', flip: true,
-                features: ['✅ VIP Plays', '❌ 10K Challenge', '❌ Bankroll Guide', '❌ VIP Chat', '🔒 1-Day Access'],
+                features: ['✅ VIP Plays', '❌ 10K Challenge', '❌ Bankroll Guide', '❌ VIP Chat'],
                 border: 'border-gray-700', btn: 'bg-gray-700 hover:bg-gray-600', badge: ''
               },
               {
                 icon: '📅', title: '1 Week Access', price: '$150.00',
-                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat', '⏳ 7-Day Access'],
+                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat'],
                 border: 'border-green-500', btn: 'bg-green-700 hover:bg-green-800', badge: '🥇'
               },
               {
                 icon: '🗓️', title: '1 Month Access', price: '$299.99',
-                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat', '⏳ 30-Day Access'],
+                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat'],
                 border: 'border-green-500', btn: 'bg-green-700 hover:bg-green-800', badge: '🥇'
               },
               {
                 icon: '📆', title: '1 Year Access', price: '$2,500.00',
-                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat', '⏳ 365-Day Access'],
+                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat'],
                 border: 'border-green-500', btn: 'bg-green-700 hover:bg-green-800', badge: '🥇'
               }
             ].map((plan, i) => (
