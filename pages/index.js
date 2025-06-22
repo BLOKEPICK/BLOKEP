@@ -27,7 +27,7 @@ export default function Home() {
             {[
               {
                 icon: '🕐', title: '1 Day Access', price: '$50.00', flip: true,
-                features: ['✅ VIP Plays', '❌ 10K Challenge', '❌ Bankroll Guide', '❌ VIP Chat', '⏳ 1-Day Access'],
+                features: ['✅ VIP Plays', '❌ 10K Challenge', '❌ Bankroll Guide', '❌ VIP Chat', '🔒 1-Day Access'],
                 border: 'border-gray-700', btn: 'bg-gray-700 hover:bg-gray-600', badge: ''
               },
               {
