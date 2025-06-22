@@ -23,79 +23,43 @@ export default function Home() {
         {/* PLANS SECTION */}
         <section className="w-full my-20 px-4">
           <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* 1 Day */}
-            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-gray-700 hover:scale-105 transition">
-              <h3 className="text-xl font-bold mb-1">🕐 1 Day Access</h3>
-              <p className="text-sm italic text-yellow-400 mb-2">Perfect if you need to FLIP FAST</p>
-              <p className="text-3xl font-bold text-green-400 mb-4">$50.00</p>
-              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
-                <li>✅ VIP Plays</li>
-                <li>❌ 10K Challenge</li>
-                <li>❌ Bankroll Guide</li>
-                <li>❌ VIP Chat</li>
-                <li>⏳ 1-Day Access</li>
-              </ul>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <button className="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full font-semibold">
-                  JOIN VIP
-                </button>
-              </a>
-            </div>
-
-            {/* 1 Week */}
-            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
-              <h3 className="text-xl font-bold mb-2">📅 1 Week Access</h3>
-              <p className="text-3xl font-bold text-green-400 mb-4">$150.00</p>
-              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
-                <li>✅ VIP Plays</li>
-                <li>✅ 10K Challenge</li>
-                <li>✅ Bankroll Guide</li>
-                <li>✅ VIP Chat</li>
-                <li>⏳ 7-Day Access</li>
-              </ul>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
-                  🥇 JOIN VIP
-                </button>
-              </a>
-            </div>
-
-            {/* 1 Month */}
-            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
-              <h3 className="text-xl font-bold mb-2">🗓️ 1 Month Access</h3>
-              <p className="text-3xl font-bold text-green-400 mb-4">$299.99</p>
-              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
-                <li>✅ VIP Plays</li>
-                <li>✅ 10K Challenge</li>
-                <li>✅ Bankroll Guide</li>
-                <li>✅ VIP Chat</li>
-                <li>⏳ 30-Day Access</li>
-              </ul>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
-                  🥇 JOIN VIP
-                </button>
-              </a>
-            </div>
-
-            {/* 1 Year */}
-            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
-              <h3 className="text-xl font-bold mb-2">📆 1 Year Access</h3>
-              <p className="text-3xl font-bold text-green-400 mb-4">$2,500.00</p>
-              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
-                <li>✅ VIP Plays</li>
-                <li>✅ 10K Challenge</li>
-                <li>✅ Bankroll Guide</li>
-                <li>✅ VIP Chat</li>
-                <li>⏳ 365-Day Access</li>
-              </ul>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
-                  🥇 JOIN VIP
-                </button>
-              </a>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto justify-center">
+            {[
+              {
+                icon: '🕐', title: '1 Day Access', price: '$50.00', flip: true,
+                features: ['✅ VIP Plays', '❌ 10K Challenge', '❌ Bankroll Guide', '❌ VIP Chat', '⏳ 1-Day Access'],
+                border: 'border-gray-700', btn: 'bg-gray-700 hover:bg-gray-600', badge: ''
+              },
+              {
+                icon: '📅', title: '1 Week Access', price: '$150.00',
+                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat', '⏳ 7-Day Access'],
+                border: 'border-green-500', btn: 'bg-green-700 hover:bg-green-800', badge: '🥇'
+              },
+              {
+                icon: '🗓️', title: '1 Month Access', price: '$299.99',
+                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat', '⏳ 30-Day Access'],
+                border: 'border-green-500', btn: 'bg-green-700 hover:bg-green-800', badge: '🥇'
+              },
+              {
+                icon: '📆', title: '1 Year Access', price: '$2,500.00',
+                features: ['✅ VIP Plays', '✅ 10K Challenge', '✅ Bankroll Guide', '✅ VIP Chat', '⏳ 365-Day Access'],
+                border: 'border-green-500', btn: 'bg-green-700 hover:bg-green-800', badge: '🥇'
+              }
+            ].map((plan, i) => (
+              <div key={i} className={`bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 ${plan.border} hover:scale-105 transition`}>
+                <h3 className="text-xl font-bold mb-1">{`${plan.icon} ${plan.title}`}</h3>
+                {plan.flip && <p className="text-sm italic text-yellow-400 mb-2">Perfect if you need to FLIP FAST</p>}
+                <p className="text-3xl font-bold text-green-400 mb-4">{plan.price}</p>
+                <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center">
+                  {plan.features.map((f, idx) => <li key={idx}>{f}</li>)}
+                </ul>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label={`Join VIP for ${plan.title}`}>
+                  <button className={`${plan.btn} text-white px-5 py-2 rounded-full font-semibold`}>
+                    {plan.badge} JOIN VIP
+                  </button>
+                </a>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -107,23 +71,23 @@ export default function Home() {
 
 
 
- {/* WHAT YOU GET SECTION */}
+   {/* WHAT YOU GET SECTION */}
         <section className="w-full px-4 my-20">
           <h2 className="text-2xl font-bold text-center mb-10">What You Get with BLOKE PICK</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto text-sm text-gray-300">
-            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto text-sm text-gray-300 text-center">
+            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-gray-700">
               <h3 className="text-lg font-bold text-green-400 mb-2">🎯 VIP Plays</h3>
               <p>Daily picks crafted from real data, not guesswork. This is where smart betting starts.</p>
             </div>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-gray-700">
               <h3 className="text-lg font-bold text-green-400 mb-2">💰 10K Challenge</h3>
               <p>Flip your bankroll step-by-step. Join our journey from $100 to $10K.</p>
             </div>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-gray-700">
               <h3 className="text-lg font-bold text-green-400 mb-2">📊 Bankroll Guide</h3>
               <p>Stop gambling. Start managing. Learn the unit system and bet like a professional.</p>
             </div>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-gray-700">
               <h3 className="text-lg font-bold text-green-400 mb-2">🗣️ VIP Chat Access</h3>
               <p>Inside info. Live reactions. Winning energy. Our private Discord is the place to be.</p>
             </div>
@@ -239,13 +203,13 @@ export default function Home() {
  {/* FOOTER */}
         <footer className="text-center text-sm text-gray-500 mb-10">
           <div className="flex justify-center space-x-6 text-2xl mb-4">
-            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram className="hover:text-white transition" />
             </a>
-            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/BlokePick" target="_blank" rel="noopener noreferrer" aria-label="Twitter (X)">
               <SiX className="hover:text-white transition" />
             </a>
-            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@blokepick" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
               <FaTiktok className="hover:text-white transition" />
             </a>
           </div>
@@ -256,7 +220,7 @@ export default function Home() {
             <span className="text-gray-500">|</span>
             <a href="/contact-us" className="hover:text-white transition">Contact Us</a>
           </div>
-          <p className="mt-4">© 2025 BLOKE PICK. All rights reserved.</p>
+          <p className="mt-4 text-gray-400">© 2025 BLOKE PICK. All rights reserved.</p>
         </footer>
       </main>
     </>
