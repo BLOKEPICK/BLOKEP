@@ -49,7 +49,7 @@ export default function Home() {
               <div key={i} className={`relative bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 ${plan.border} hover:scale-105 transition`}>
                 <>
   {plan.title.includes('Month') && <span className="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-full">Most Popular</span>}
-  {plan.title.includes('Year') && <span className="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">Best Value</span>}
+  {plan.title.includes('Year') && <span className="absolute top-2 right-2 bg-blue-700 text-white text-xs font-bold px-2 py-1 rounded-full">Best Value</span>}
   <h3 className="text-xl font-bold mb-1">{`${plan.icon} ${plan.title}`}</h3>
 </>
                 {plan.flip && <p className="text-sm italic text-yellow-400 mb-2">Perfect if you need to FLIP FAST</p>}
