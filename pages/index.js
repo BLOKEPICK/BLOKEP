@@ -50,8 +50,16 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-1">{`${plan.icon} ${plan.title}`}</h3>
                 {plan.flip && <p className="text-sm italic text-yellow-400 mb-2">Perfect if you need to FLIP FAST</p>}
                 <p className="text-3xl font-bold text-green-400 mb-4">{plan.price}</p>
-                <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center">
-                  {plan.features.map((f, idx) => <li key={idx}>{f}</li>)}
+                <ul className="text-sm text-gray-300 mb-4 space-y-2 w-full max-w-xs text-left">
+                  {plan.features.map((f, idx) => (
+                    <li
+                      key={idx}
+                      className={`flex items-center px-3 py-1 rounded-md ${f.includes('✅') ? 'bg-green-900/20 text-green-300' : 'bg-gray-700/20 text-gray-400'}`}
+                    >
+                      <span className="mr-2 text-lg">{f.includes('✅') ? '✅' : '❌'}</span>
+                      <span className="text-sm">{f.replace('✅ ', '').replace('❌ ', '')}</span>
+                    </li>
+                  ))}
                 </ul>
                 <a href="#" target="_blank" rel="noopener noreferrer" aria-label={`Join VIP for ${plan.title}`}>
                   <button className={`${plan.btn} text-white px-5 py-2 rounded-full font-semibold`}>
