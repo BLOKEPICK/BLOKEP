@@ -1,59 +1,103 @@
-import Head from 'next/head';
-import { FaInstagram, FaTiktok } from 'react-icons/fa';
-import { SiX } from 'react-icons/si';
+// pages/index.tsx o index.jsx (Next.js)
+import Head from 'next/head'
+import Image from 'next/image'
+import { FaInstagram, FaTiktok } from 'react-icons/fa'
+import { SiX } from 'react-icons/si'
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>BLOKE PICK | Smarter Betting Starts Here</title>
-        <meta name="description" content="Join BLOKE PICK — the premium sports betting community built for disciplined bettors. Access daily picks, smart parlays, real data analysis, and a private VIP Discord where winning is the mindset. Stop guessing. Start betting smarter." />
+        <meta name="description" content="Join BLOKE PICK — the premium sports betting community built for disciplined bettors. Access daily picks, smart parlays, real data analysis, and a private VIP Discord where winning is the mindset." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col items-center justify-center px-4 text-center max-w-5xl mx-auto">
+
+      <main className="flex flex-col items-center justify-center px-4 text-center max-w-6xl mx-auto text-white">
         <h1 className="text-5xl font-bold mt-16 tracking-widest">BLOKE PICK</h1>
         <div className="w-24 h-px bg-gray-600 my-4 rounded-full opacity-50" />
         <p className="text-xl max-w-xl">Your journey to smarter sports betting starts here.</p>
         <p className="text-md text-gray-400 mb-6">Premium picks, data-driven bets, and a winning community.</p>
-        
-<section className="w-full my-20 px-4">
-  <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto justify-center">
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
-      <h3 className="text-xl font-bold mb-2">🗓️ Two Week of BLOKE PICKS</h3>
-      <p className="text-3xl font-bold text-green-400 mb-4">$25</p>
-      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center w-full max-w-xs">
-        <li>✅ Access to VIP Picks</li>
-        <li>✅ Access to VIP Chat</li>
-        <li>❌ No access to Bankroll Guide</li>
-        <li>❌ No access to Elite Picks</li>
-        <li>⏳ 2-Weeks Access</li>
-      </ul>
-      <a href="https://buy.stripe.com/6oU3cv9EC2cN0s7cVueZ201" target="_blank" rel="noopener noreferrer">
-  <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
-    🥇 JOIN VIP
-  </button>
-</a>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
-      <h3 className="text-xl font-bold mb-2">📅 One Month of BLOKE PICKS</h3>
-      <p className="text-3xl font-bold text-green-400 mb-4">$75</p>
-      <ul className="text-sm text-gray-300 mb-4 space-y-1 text-center w-full max-w-xs">
-        <li>✅ Access to VIP Picks</li>
-        <li>✅ Access to VIP Chat</li>
-        <li>✅ Access to Bankroll Guide</li>
-        <li>✅ Access to Elite Picks</li>
-        <li>⏳ 30-Day Access</li>
-      </ul>
-      <a href="https://buy.stripe.com/cNi00j3gedVvfn15t2eZ202" target="_blank" rel="noopener noreferrer">
-  <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
-    🥇 JOIN VIP
-  </button>
-</a>
 
-    </div>
-  </div>
-</section>
+        {/* PLANS SECTION */}
+        <section className="w-full my-20 px-4">
+          <h2 className="text-2xl font-bold text-center mb-10">Choose Your VIP Access</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* 1 Day */}
+            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-gray-700 hover:scale-105 transition">
+              <h3 className="text-xl font-bold mb-1">🕐 1 Day Access</h3>
+              <p className="text-sm italic text-yellow-400 mb-2">Perfect if you need to FLIP FAST</p>
+              <p className="text-3xl font-bold text-green-400 mb-4">$50.00</p>
+              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
+                <li>✅ VIP Plays</li>
+                <li>❌ 10K Challenge</li>
+                <li>❌ Bankroll Guide</li>
+                <li>❌ VIP Chat</li>
+                <li>⏳ 1-Day Access</li>
+              </ul>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <button className="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full font-semibold">
+                  JOIN VIP
+                </button>
+              </a>
+            </div>
+
+            {/* 1 Week */}
+            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
+              <h3 className="text-xl font-bold mb-2">📅 1 Week Access</h3>
+              <p className="text-3xl font-bold text-green-400 mb-4">$150.00</p>
+              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
+                <li>✅ VIP Plays</li>
+                <li>✅ 10K Challenge</li>
+                <li>✅ Bankroll Guide</li>
+                <li>✅ VIP Chat</li>
+                <li>⏳ 7-Day Access</li>
+              </ul>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
+                  🥇 JOIN VIP
+                </button>
+              </a>
+            </div>
+
+            {/* 1 Month */}
+            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
+              <h3 className="text-xl font-bold mb-2">🗓️ 1 Month Access</h3>
+              <p className="text-3xl font-bold text-green-400 mb-4">$299.99</p>
+              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
+                <li>✅ VIP Plays</li>
+                <li>✅ 10K Challenge</li>
+                <li>✅ Bankroll Guide</li>
+                <li>✅ VIP Chat</li>
+                <li>⏳ 30-Day Access</li>
+              </ul>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
+                  🥇 JOIN VIP
+                </button>
+              </a>
+            </div>
+
+            {/* 1 Year */}
+            <div className="bg-[#1a1a1a] p-6 rounded-xl shadow text-center flex flex-col items-center border-t-4 border-green-500 hover:scale-105 transition">
+              <h3 className="text-xl font-bold mb-2">📆 1 Year Access</h3>
+              <p className="text-3xl font-bold text-green-400 mb-4">$2,500.00</p>
+              <ul className="text-sm text-gray-300 mb-4 space-y-1 w-full max-w-xs text-left">
+                <li>✅ VIP Plays</li>
+                <li>✅ 10K Challenge</li>
+                <li>✅ Bankroll Guide</li>
+                <li>✅ VIP Chat</li>
+                <li>⏳ 365-Day Access</li>
+              </ul>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold">
+                  🥇 JOIN VIP
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
 
 
 <div className="w-full flex justify-center py-8">
@@ -63,36 +107,28 @@ export default function Home() {
 
 
 
-<section className="w-full px-4 my-20">
-  <h2 className="text-2xl font-bold text-center mb-10">What You Get</h2>
-  <p className="text-center text-gray-400 mb-8 text-sm">*Access to these features may vary depending on your selected plan.</p>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto text-sm text-gray-300">
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Daily Premium Picks</h3>
-      <p>Get high-conviction bets posted daily by sharp analysts. Available in all plans.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">VIP Community Chat</h3>
-      <p>Join sharp bettors and discuss plays. Included in all plans.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Elite Picks</h3>
-      <p>Our highest-confidence bets. <span className="text-yellow-400">Only available in Monthly Plan.</span></p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Winning Ticket Slides</h3>
-      <p>See past winners and track performance. Available to all subscribers.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Real Stats & Research</h3>
-      <p>Every pick is backed by data, not guesswork. Available in all plans.</p>
-    </div>
-    <div className="bg-[#1a1a1a] p-6 rounded-xl text-center border border-gray-700">
-      <h3 className="text-lg font-bold text-green-400 mb-4">Private Discord Access</h3>
-      <p>Connect with BLOKE PICK staff & access locked channels. Included in all plans.</p>
-    </div>
-  </div>
-</section>
+ {/* WHAT YOU GET SECTION */}
+        <section className="w-full px-4 my-20">
+          <h2 className="text-2xl font-bold text-center mb-10">What You Get with BLOKE PICK</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto text-sm text-gray-300">
+            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+              <h3 className="text-lg font-bold text-green-400 mb-2">🎯 VIP Plays</h3>
+              <p>Daily picks crafted from real data, not guesswork. This is where smart betting starts.</p>
+            </div>
+            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+              <h3 className="text-lg font-bold text-green-400 mb-2">💰 10K Challenge</h3>
+              <p>Flip your bankroll step-by-step. Join our journey from $100 to $10K.</p>
+            </div>
+            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+              <h3 className="text-lg font-bold text-green-400 mb-2">📊 Bankroll Guide</h3>
+              <p>Stop gambling. Start managing. Learn the unit system and bet like a professional.</p>
+            </div>
+            <div className="bg-[#1a1a1a] p-6 rounded-xl text-left border border-gray-700">
+              <h3 className="text-lg font-bold text-green-400 mb-2">🗣️ VIP Chat Access</h3>
+              <p>Inside info. Live reactions. Winning energy. Our private Discord is the place to be.</p>
+            </div>
+          </div>
+        </section>
 
 
 
@@ -200,7 +236,8 @@ export default function Home() {
 
 
 
-<footer className="text-center text-sm text-gray-500 mb-10">
+ {/* FOOTER */}
+        <footer className="text-center text-sm text-gray-500 mb-10">
           <div className="flex justify-center space-x-6 text-2xl mb-4">
             <a href="https://www.instagram.com/blokepick/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="hover:text-white transition" />
@@ -212,18 +249,16 @@ export default function Home() {
               <FaTiktok className="hover:text-white transition" />
             </a>
           </div>
-
           <div className="flex justify-center flex-wrap gap-4 text-blue-400 mb-4">
-            <a href="https://blokepick.com/terms-of-service" className="hover:text-white transition">Terms of Service</a>
+            <a href="/terms-of-service" className="hover:text-white transition">Terms of Service</a>
             <span className="text-gray-500">|</span>
-            <a href="https://blokepick.com/privacy-policy" className="hover:text-white transition">Privacy Policy</a>
+            <a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a>
             <span className="text-gray-500">|</span>
-            <a href="https://blokepick.com/contact-us" className="hover:text-white transition">Contact Us</a>
+            <a href="/contact-us" className="hover:text-white transition">Contact Us</a>
           </div>
-
           <p className="mt-4">© 2025 BLOKE PICK. All rights reserved.</p>
         </footer>
       </main>
     </>
-  );
+  )
 }
