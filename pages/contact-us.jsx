@@ -46,7 +46,7 @@ export default function ContactForm() {
           >
             <label className="block">
               <span className="text-sm font-medium text-black">
-                Discord Username or Name <span className="text-red-500">*</span>
+                Discord Username OR Name <span className="text-red-500">*</span>
               </span>
               <input
                 type="text"
