@@ -2,28 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: light;
-}
-html, body {
-  height: 100%;
-}
 body {
-  @apply bg-white text-brand-text antialiased;
-}
-
-.btn {
-  @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3 text-sm font-medium transition;
-}
-.btn-primary {
-  @apply bg-brand-primary text-white shadow-sm hover:shadow-md;
-}
-.btn-outline {
-  @apply border border-brand-border hover:bg-white;
-}
-.card {
-  @apply rounded-3xl border border-brand-border bg-white p-6;
-}
-.muted {
-  @apply text-brand-subtle;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
 }
