@@ -43,6 +43,9 @@ export default function Footer() {
       Chat on WhatsApp
     </a>
   </div>
+  <div className="md:col-span-4 flex items-center justify-center gap-3 mt-2">
+    <a href={COMPANY.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-gray-700 text-gray-700 bg-white hover:bg-gray-700 hover:text-white px-5 py-2 font-medium shadow-sm transition-colors"><FaWhatsapp className="text-lg" /> WhatsApp</a>
+  </div>
 </div>
       </div>
       <div className="border-t border-white/10 py-4 text-center text-xs">© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</div>

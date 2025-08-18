@@ -13,7 +13,7 @@ export default function Hero() {
           <p className="mt-4 text-lg text-slate-200">Licensed & Insured · Free Estimates · Warranty on Labor</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#contact" className="rounded-xl px-6 py-3 bg-emerald-500 font-semibold text-slate-900 hover:bg-emerald-400">Get a Free Quote</a>
-            <a href={COMPANY.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-[#25D366] text-[#25D366] bg-white hover:bg-[#25D366] hover:text-white px-5 py-2 font-medium shadow-sm transition"><FaWhatsapp className="text-lg" /> Chat on WhatsApp</a>
+            <a href={COMPANY.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-gray-700 text-gray-700 bg-white hover:bg-gray-700 hover:text-white px-5 py-2 font-medium shadow-sm transition-colors"><FaWhatsapp className="text-lg" /> Chat on WhatsApp</a>
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-slate-300">
             <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 underline decoration-white/40 underline-offset-4"><Phone className="w-5 h-5" /> {COMPANY.phone}</a>
