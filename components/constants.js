@@ -30,3 +30,31 @@ export const PROJECTS = [
   { title: "Fiber Cement Upgrade", service: "siding", city: "Columbus", img: "/images/ig/siding-fibercement-02.webp", href: COMPANY.instagram },
   { title: "Deck & Railing", service: "carpentry", city: "Dublin", img: "/images/ig/deck-rail-01.webp", href: COMPANY.instagram },
 ];
+
+
+export const REVIEWS = [
+  {
+    name: "Michael R.",
+    rating: 5,
+    text: "They replaced our asphalt roof in two days. Clean work, good price, zero leaks.",
+    source: "Google"
+  },
+  {
+    name: "Laura S.",
+    rating: 5,
+    text: "Siding looks brand new. Great communication and they finished ahead of schedule.",
+    source: "Homeowner"
+  },
+  {
+    name: "Daniel P.",
+    rating: 5,
+    text: "Framing for our addition was solid and fast. Highly recommend Ozuna Construction.",
+    source: "Remodel"
+  },
+  {
+    name: "Jessica T.",
+    rating: 5,
+    text: "Quick flat roof repair after a storm. Transparent estimate and professional team.",
+    source: "Emergency Repair"
+  }
+];
