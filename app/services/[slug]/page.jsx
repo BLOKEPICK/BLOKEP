@@ -1,3 +1,4 @@
+export async function generateMetadata({ params }){ const t=(params?.slug?params.slug[0].toUpperCase()+params.slug.slice(1):'Service'); return { title: t+' | Ozuna Construction LLC', description:'Professional '+(params?.slug||'service')+' in Columbus, OH.' } }
 export default function ServicePage({ params }) {
   const serviceMap = {
     framing: { title: "Framing", items: ["Wood & metal framing","Load-bearing walls","Additions & garages","Code compliance"] },
@@ -32,3 +33,5 @@ export default function ServicePage({ params }) {
     </main>
   );
 }
+
+<script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context":"https://schema.org","@type":"Service","serviceType":(typeof window!=="undefined"?window.location.pathname.split("/").pop():"Service"),"provider":{"@type":"LocalBusiness","name":"Ozuna Construction LLC"},"areaServed":["Columbus, OH"]})}}/>
