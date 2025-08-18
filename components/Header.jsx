@@ -16,12 +16,12 @@ export default function Header() {
           </div>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
-          <a href="#services" className="hover:text-emerald-700">Servicios</a>
-          <a href="#projects" className="hover:text-emerald-700">Proyectos</a>
-          <a href="#reviews" className="hover:text-emerald-700">Reseñas</a>
-          <a href="#areas" className="hover:text-emerald-700">Áreas</a>
+          <a href="#services" className="hover:text-emerald-700">Services</a>
+          <a href="#projects" className="hover:text-emerald-700">Projects</a>
+          <a href="#reviews" className="hover:text-emerald-700">Reviews</a>
+          <a href="#areas" className="hover:text-emerald-700">Areas</a>
           <a href="#faq" className="hover:text-emerald-700">FAQ</a>
-          <a href="#contact" className="hover:text-emerald-700">Contacto</a>
+          <a href="#contact" className="hover:text-emerald-700">Contact</a>
         </nav>
         <div className="flex items-center gap-2">
           <a href={COMPANY.whatsappHref} className="hidden sm:inline-flex items-center gap-2 rounded-xl px-3 py-2 bg-emerald-600 text-white text-sm font-semibold shadow hover:bg-emerald-700" aria-label="WhatsApp">

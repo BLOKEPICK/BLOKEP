@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900">Proyectos recientes</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900">Projects recientes</h2>
             <p className="mt-2 text-slate-600">Galería con fotos seleccionadas del Instagram del cliente. En producción usaré versiones .webp optimizadas y alt text SEO.</p>
           </div>
           <a className="text-emerald-700 font-semibold" href={COMPANY.instagram} target="_blank">Ver Instagram →</a>
