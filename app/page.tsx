@@ -1,6 +1,8 @@
 // TailwindCSS recommended. Replace placeholder images later with real IG assets.
 "use client";
 import React from "react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 
 const COMPANY = {
   name: "Ozuna Construction LLC",
@@ -44,23 +46,6 @@ const REVIEWS: { name: string; city: string; rating: number; text: string }[] = 
 
 const AREAS = ["Columbus","Dublin","Hilliard","Westerville","Gahanna","Worthington","Grove City","New Albany"] as const;
 
-const IconPhone = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden className="inline">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.77.54 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.11a2 2 0 0 1 2.11-.45c.84.24 1.71.42 2.61.54A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-const IconMail = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden className="inline">
-    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" strokeWidth="2"/>
-    <path d="m22 6-10 7L2 6" stroke="currentColor" strokeWidth="2"/>
-  </svg>
-);
-const IconWhats = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden className="inline">
-    <path d="M20 3.5A10 10 0 0 0 4.8 17.8L3 22l4.4-1.8A10 10 0 1 0 20 3.5z" stroke="currentColor" strokeWidth="2"/>
-    <path d="M7.5 9.5c0 4 4 7 7.5 7.5l1.5-2-2.5-1-1 1c-2-.5-3.5-2-4-4l1-1-1-2.5-1.5 2z" fill="currentColor"/>
-  </svg>
-);
 
 function Header() {
   return (
@@ -83,10 +68,10 @@ function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <a href={COMPANY.whatsappHref} className="hidden sm:inline-flex items-center gap-2 rounded-xl px-3 py-2 bg-emerald-600 text-white text-sm font-semibold shadow hover:bg-emerald-700" aria-label="WhatsApp">
-            <IconWhats /> <span>WhatsApp</span>
+            <MessageCircle className=\"w-5 h-5\" /> <span>WhatsApp</span>
           </a>
           <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 rounded-xl px-3 py-2 bg-slate-900 text-white text-sm font-semibold shadow hover:bg-slate-800" aria-label="Call Now">
-            <IconPhone /> <span>{COMPANY.phone}</span>
+            <Phone className=\"w-5 h-5\" /> <span>{COMPANY.phone}</span>
           </a>
         </div>
       </div>
@@ -107,8 +92,8 @@ function Hero() {
             <a href={COMPANY.whatsappHref} className="rounded-xl px-6 py-3 border border-white/30 hover:bg-white/10">Chat on WhatsApp</a>
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-slate-300">
-            <span className="inline-flex items-center gap-2"><IconPhone/> {COMPANY.phone}</span>
-            <span className="inline-flex items-center gap-2"><IconMail/> {COMPANY.email}</span>
+            <span className="inline-flex items-center gap-2"><Phone className=\"w-5 h-5\" /> {COMPANY.phone}</span>
+            <span className="inline-flex items-center gap-2"><Mail className=\"w-5 h-5\" /> {COMPANY.email}</span>
           </div>
         </div>
         <div className="relative">
@@ -303,9 +288,9 @@ function Contact() {
           <h2 className="text-3xl font-extrabold tracking-tight">Obtén un estimado gratis</h2>
           <p className="mt-2 text-emerald-50">Cuéntanos sobre tu proyecto y te contactamos hoy.</p>
           <div className="mt-6 space-y-2 text-emerald-100">
-            <p className="inline-flex items-center gap-2"><IconPhone/> <a className="underline" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
-            <p className="inline-flex items-center gap-2"><IconWhats/> <a className="underline" href={COMPANY.whatsappHref}>WhatsApp</a></p>
-            <p className="inline-flex items-center gap-2"><IconMail/> <a className="underline" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></p>
+            <p className="inline-flex items-center gap-2"><Phone className=\"w-5 h-5\" /> <a className="underline" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
+            <p className="inline-flex items-center gap-2"><MessageCircle className=\"w-5 h-5\" /> <a className="underline" href={COMPANY.whatsappHref}>WhatsApp</a></p>
+            <p className="inline-flex items-center gap-2"><Mail className=\"w-5 h-5\" /> <a className="underline" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></p>
           </div>
         </div>
         <form onSubmit={onSubmit} className="bg-white text-slate-900 rounded-2xl p-6 shadow-xl">
@@ -349,8 +334,8 @@ function Footer() {
           <p className="text-white font-extrabold text-lg">{COMPANY.name}</p>
           <p className="text-sm mt-2">{COMPANY.city}</p>
           <div className="mt-3 space-y-1 text-sm">
-            <a className="block hover:text-white" href={COMPANY.phoneHref}><span className="inline-block mr-1">📞</span>{COMPANY.phone}</a>
-            <a className="block hover:text-white" href={`mailto:${COMPANY.email}`}><span className="inline-block mr-1">✉️</span>{COMPANY.email}</a>
+            <a className="block hover:text-white" href={COMPANY.phoneHref}><span className="inline-block mr-1"><Phone className="w-4 h-4 mr-1 inline" />{COMPANY.phone}</a>
+            <a className="block hover:text-white" href={`mailto:${COMPANY.email}`}><span className="inline-block mr-1"><Mail className="w-4 h-4 mr-1 inline" />{COMPANY.email}</a>
             <a className="block hover:text-white" href={COMPANY.instagram} target="_blank">Instagram</a>
           </div>
         </div>
