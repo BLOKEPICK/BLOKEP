@@ -1,5 +1,6 @@
 import React from "react";
-import { Phone, Mail, MessageCircle } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { COMPANY, SERVICES } from "./constants";
 
 export default function Footer() {
   return (
@@ -9,8 +10,8 @@ export default function Footer() {
           <p className="text-white font-extrabold text-lg">{COMPANY.name}</p>
           <p className="text-sm mt-2">{COMPANY.city}</p>
           <div className="mt-3 space-y-1 text-sm">
-            <a className="block hover:text-white" href={COMPANY.phoneHref}><span className="inline-block mr-1"><Phone className="w-4 h-4 mr-1 inline" /></span>{COMPANY.phone}</a>
-            <a className="block hover:text-white" href={`mailto:${COMPANY.email}`}><span className="inline-block mr-1"><Mail className="w-4 h-4 mr-1 inline" /></span>{COMPANY.email}</a>
+            <a className="block hover:text-white" href={COMPANY.phoneHref}><span className="inline-block mr-1"><Phone className="w-4 h-4 inline" /></span>{COMPANY.phone}</a>
+            <a className="block hover:text-white" href={`mailto:${COMPANY.email}`}><span className="inline-block mr-1"><Mail className="w-4 h-4 inline" /></span>{COMPANY.email}</a>
             <a className="block hover:text-white" href={COMPANY.instagram} target="_blank">Instagram</a>
           </div>
         </div>

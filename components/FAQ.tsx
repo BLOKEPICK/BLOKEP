@@ -1,4 +1,5 @@
 import React from "react";
+import { COMPANY } from "./constants";
 
 export default function FAQ() {
   const faqs = [

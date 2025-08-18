@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
-import { Phone, Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
+import { COMPANY, SERVICES } from "./constants";
 
 export default function Contact() {
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -20,9 +22,9 @@ export default function Contact() {
           <h2 className="text-3xl font-extrabold tracking-tight">Obtén un estimado gratis</h2>
           <p className="mt-2 text-emerald-50">Cuéntanos sobre tu proyecto y te contactamos hoy.</p>
           <div className="mt-6 space-y-2 text-emerald-100">
-            <p className="inline-flex items-center gap-2"><Phone className=\"w-5 h-5\" /> <a className="underline" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
-            <p className="inline-flex items-center gap-2"><MessageCircle className=\"w-5 h-5\" /> <a className="underline" href={COMPANY.whatsappHref}>WhatsApp</a></p>
-            <p className="inline-flex items-center gap-2"><Mail className=\"w-5 h-5\" /> <a className="underline" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></p>
+            <p className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> <a className="underline" href={COMPANY.phoneHref}>{COMPANY.phone}</a></p>
+            <p className="inline-flex items-center gap-2"><MessageCircle className="w-5 h-5" /> <a className="underline" href={COMPANY.whatsappHref}>WhatsApp</a></p>
+            <p className="inline-flex items-center gap-2"><Mail className="w-5 h-5" /> <a className="underline" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></p>
           </div>
         </div>
         <form onSubmit={onSubmit} className="bg-white text-slate-900 rounded-2xl p-6 shadow-xl">

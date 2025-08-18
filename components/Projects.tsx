@@ -1,4 +1,5 @@
 import React from "react";
+import { PROJECTS, COMPANY } from "./constants";
 
 export default function Projects() {
   return (
@@ -16,7 +17,6 @@ export default function Projects() {
             <a key={i} href={p.href || "#"} target="_blank" className="group block">
               <div className="aspect-square w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 grid place-items-center">
                 {p.img ? (
-                  // eslint-disable-next-line @next/next/no-img-element
                   <img src={p.img} alt={`${p.title} in ${p.city}`} className="h-full w-full object-cover group-hover:scale-105 transition"/>
                 ) : (
                   <div className="text-center p-6 text-slate-500">

@@ -1,4 +1,5 @@
 import React from "react";
+import { SERVICES } from "./constants";
 
 export default function Services() {
   return (
@@ -11,7 +12,7 @@ export default function Services() {
             <div key={s.slug} className="rounded-2xl border border-slate-200 p-5 hover:shadow-sm">
               <h3 className="font-semibold text-slate-900">{s.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
-              <a href={`/#contact`} className="mt-4 inline-block text-emerald-700 font-semibold">Free estimate →</a>
+              <a href="#contact" className="mt-4 inline-block text-emerald-700 font-semibold">Free estimate →</a>
             </div>
           ))}
         </div>

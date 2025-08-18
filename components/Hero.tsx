@@ -1,5 +1,6 @@
 import React from "react";
-import { Phone, Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
+import { COMPANY } from "./constants";
 
 export default function Hero() {
   return (
@@ -11,11 +12,11 @@ export default function Hero() {
           <p className="mt-4 text-lg text-slate-200">Licensed & Insured · Free Estimates · Warranty on Labor</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#contact" className="rounded-xl px-6 py-3 bg-emerald-500 font-semibold text-slate-900 hover:bg-emerald-400">Get a Free Quote</a>
-            <a href={COMPANY.whatsappHref} className="rounded-xl px-6 py-3 border border-white/30 hover:bg-white/10">Chat on WhatsApp</a>
+            <a href={COMPANY.whatsappHref} className="rounded-xl px-6 py-3 border border-white/30 hover:bg-white/10 inline-flex items-center gap-2"><MessageCircle className="w-5 h-5" /> Chat on WhatsApp</a>
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-slate-300">
-            <span className="inline-flex items-center gap-2"><Phone className=\"w-5 h-5\" /> {COMPANY.phone}</span>
-            <span className="inline-flex items-center gap-2"><Mail className=\"w-5 h-5\" /> {COMPANY.email}</span>
+            <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> {COMPANY.phone}</span>
+            <span className="inline-flex items-center gap-2"><Mail className="w-5 h-5" /> {COMPANY.email}</span>
           </div>
         </div>
         <div className="relative">

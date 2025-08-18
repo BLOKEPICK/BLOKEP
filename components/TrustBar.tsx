@@ -1,12 +1,7 @@
 import React from "react";
 
 export default function TrustBar() {
-  const items = [
-    "Licensed & Insured",
-    "10+ Years Experience",
-    "Warranty on Labor",
-    "Local & Family-Owned",
-  ];
+  const items = ["Licensed & Insured","10+ Years Experience","Warranty on Labor","Local & Family-Owned"];
   return (
     <section className="py-8 bg-slate-50 border-y border-slate-200">
       <div className="mx-auto max-w-7xl px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">

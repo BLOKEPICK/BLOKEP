@@ -1,4 +1,5 @@
 import React from "react";
+import { AREAS, COMPANY } from "./constants";
 
 export default function Areas() {
   return (
