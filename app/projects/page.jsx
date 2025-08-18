@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {/* Replace with real images in public/images/ig */}
-          {Array.from({ length).map((_, i) => (
+          {Array.from({ length: 8 }).map((_, i) => (
             <div key={i} className="aspect-square rounded-2xl bg-slate-100 border border-slate-200 grid place-items-center">
               <span className="text-slate-500 text-sm">Project #{i+1}</span>
             </div>
