@@ -1,5 +1,5 @@
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const serviceMap: Record<string, { title: string; items: string[] }> = {
+export default function ServicePage({ params }: { params: { slug) {
+  const serviceMap: Record<string, { title: string; items= {
     framing: { title: "Framing", items: ["Wood & metal framing","Load-bearing walls","Additions & garages","Code compliance"] },
     roofing: { title: "Roofing", items: ["Asphalt shingles","Metal roofing","Flat roof membranes","Emergency repairs"] },
     siding: { title: "Siding", items: ["Vinyl siding","Fiber cement","Wood siding","Trim & soffit"] },

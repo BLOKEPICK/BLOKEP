@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="relative">
           <div className="aspect-[4/3] w-full rounded-2xl bg-white/5 ring-1 ring-white/10 grid place-items-center text-center p-6">
-            <p className="text-slate-200">Reemplaza este bloque con una foto real del Instagram del cliente (16:9 ó 4:3).
+            <p className="text-slate-200">Reemplaza este bloque con una foto real del Instagram del cliente (16:9 ó 4).
               <br/>Optimizada en .webp para mejor performance.</p>
           </div>
         </div>

@@ -6,9 +6,9 @@ export const COMPANY = {
   email: "ozunaconstructionllc@gmail.com",
   instagram: "https://www.instagram.com/ozuna_construction_llc/",
   city: "Columbus, OH",
-} as const;
+};
 
-export const SERVICES: { slug: string; title: string; desc: string }[] = [
+export const SERVICES: { slug: string; title: string; desc= [
   { slug: "framing", title: "Framing", desc: "Structural framing for new builds, additions and repairs." },
   { slug: "roofing", title: "Roofing", desc: "Repairs & replacements • Asphalt • Metal • Flat roofs." },
   { slug: "siding", title: "Siding", desc: "Vinyl, fiber cement, wood — installation & repairs." },
@@ -16,7 +16,7 @@ export const SERVICES: { slug: string; title: string; desc: string }[] = [
   { slug: "remodeling", title: "Remodeling", desc: "Kitchens, bathrooms, basements and full renovations." },
 ];
 
-export const PROJECTS: { title: string; service: string; city: string; img?: string; href?: string }[] = [
+export const PROJECTS: { title: string; service: string; city: string; img?: string; href?= [
   { title: "Asphalt Roof Replacement", service: "roofing", city: "Columbus", img: "/images/ig/roof-shingles-01.webp", href: COMPANY.instagram },
   { title: "Metal Roof Install", service: "roofing", city: "Dublin", img: "/images/ig/roof-metal-02.webp", href: COMPANY.instagram },
   { title: "Flat Roof Repair", service: "roofing", city: "Hilliard", img: "/images/ig/roof-flat-03.webp", href: COMPANY.instagram },
@@ -27,7 +27,7 @@ export const PROJECTS: { title: string; service: string; city: string; img?: str
   { title: "Kitchen Remodeling", service: "remodeling", city: "New Albany", img: "/images/ig/remodel-kitchen-01.webp", href: COMPANY.instagram },
 ];
 
-export const REVIEWS: { name: string; city: string; rating: number; text: string }[] = [
+export const REVIEWS: { name: string; city: string; rating: number; text= [
   { name: "M. Rivera", city: "Columbus, OH", rating: 5, text: "Nos reemplazaron el techo en 2 días y dejaron todo limpio. Trato claro y precio justo. (Sample)" },
   { name: "E. Thompson", city: "Dublin, OH", rating: 5, text: "Actualizamos el siding vinílico y la casa parece nueva. Excelente detalle en las terminaciones. (Sample)" },
   { name: "Carlos H.", city: "Hilliard, OH", rating: 5, text: "Repararon una filtración complicada. Puntuales y profesionales, cero sorpresas. (Sample)" },
@@ -38,4 +38,4 @@ export const REVIEWS: { name: string; city: string; rating: number; text: string
   { name: "L. Nguyen", city: "New Albany, OH", rating: 5, text: "Reparación de techo plano y mantenimiento. Sin goteras desde entonces. (Sample)" },
 ];
 
-export const AREAS = ["Columbus","Dublin","Hilliard","Westerville","Gahanna","Worthington","Grove City","New Albany"] as const;
+export const AREAS = ["Columbus","Dublin","Hilliard","Westerville","Gahanna","Worthington","Grove City","New Albany"];

@@ -5,7 +5,7 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 import { COMPANY, SERVICES } from "./constants";
 
 export default function Contact() {
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function onSubmit(e) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const name = data.get("name");

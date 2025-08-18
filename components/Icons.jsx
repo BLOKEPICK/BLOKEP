@@ -1,7 +1,7 @@
 import React from "react";
 
 /** WhatsApp brand icon, clean + crisp (SVG path from brand guidelines approximation) */
-export function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
+export function WhatsAppIcon(props) {
   return (
     <svg
       viewBox="0 0 256 256"
