@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Mail, Phone } from "lucide-react";
 import { COMPANY, SERVICES } from "./constants";
 
